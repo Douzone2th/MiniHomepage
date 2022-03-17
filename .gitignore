@@ -1,0 +1,15 @@
+
+# git에 쓸모없는 파일이 올라가지 않도록 해주세요.
+#jaebin gitignore
+
+mini-homepage.iml
+./mini-homepage.iml
+
+.idea/artifacts/
+./.idea/*
+.idea/
+#heesoo gitignore
+
+#sangyoon gitignore
+
+#woohyeoung gitignore

@@ -16,12 +16,21 @@ git clone 주소
 git remote -v
 
 - 원격 연결
-git remote add upstream 주소
+git remote add upstream 조직주소
+git remote add origin 개인주소
 
 - pull : 원격 저장소의 정보를 가져오면서 자동으로 로컬 브랜치에 병합(Merge)까지 수행해주는 명령어 
 git pull upstream main
 
 - 원격 개인저장소 및 원격 조직 저장소에 올리기
+- 올리기전에 pull이나 fetch로 변경점 확인
+첫번째 방법. 
+git pull upstream main
+
+두번째 방법. 
+git fetch upstream
+git rebase upstream/main
+
 1. add : 변경된 파일 스테이징
 
 . 모든 파일 스테이징
@@ -34,7 +43,6 @@ git add web/css/main.css
 git commit -m "커밋 메시지"
 
 3. push : 원격저장소에 변경된 파일 올리기
-git push upstream main
 git push origin main
 ```
 - team4 git commit 컨벤션

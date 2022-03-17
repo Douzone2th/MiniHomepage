@@ -4,5 +4,12 @@
 
 mini-homepage.iml
 ./mini-homepage.iml
-./.idea/
+
+.idea/artifacts/
 ./.idea/*
+.idea/
+#heesoo gitignore
+
+#sangyoon gitignore
+
+#woohyeoung gitignore

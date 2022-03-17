@@ -1,7 +1,57 @@
-# MiniHomepage
+# MiniHomepage>
 
 ---
+
+<a href="#bottom" style= " font-size:35px">과제 확인 click</a>
+
+- git 명령어 
+```
+- 깃 초기 셋팅(원하는 본인의 디렉토리에서)
+git init
+
+- 프로젝트 clone
+git clone 주소
+
+- 원격 연결 확인
+git remote -v
+
+- 원격 연결
+git remote add upstream 주소
+
+- pull : 원격 저장소의 정보를 가져오면서 자동으로 로컬 브랜치에 병합(Merge)까지 수행해주는 명령어 
+git pull upstream main
+
+- 원격 개인저장소 및 원격 조직 저장소에 올리기
+1. add : 변경된 파일 스테이징
+
+. 모든 파일 스테이징
+git add .
+
+원하는 파일만 스테이징
+git add web/css/main.css
+
+2. commit : 변경된 파일 추가 및 삭제 및 변경 사항, 변경점 기록 
+git commit -m "커밋 메시지"
+
+3. push : 원격저장소에 변경된 파일 올리기
+git push upstream main
+git push origin main
+```
+- team4 git commit 컨벤션
+```
+추가시
+feat:3/18, add news menu 
+feat:3/18, add index.html  
+feat:3/18, 메인페이지 추가
+feat:3/18, 장소 메뉴 추가
+fix:3/19, fix location.html
+docs:3/20, add web/js
+refator:3/21, refactor web/js/main.js
+```
+---
 ## 4팀 미니홈페이지 과제
+
+<a id="bottom"></a>
 - 4팀을 소개하는 미니홈페이지를 제작해주세요.
 - 백엔드 없이 정적 웹서버만 만들어 주세요.
 - 기간 3/21 ~ 3/22
@@ -60,3 +110,7 @@
 - 다양한 google Fonts 및 copub체 , 배달의 민족체, 엘리스체
 ##### icon
 - [material](https://material.io/search.html?q=filled)
+
+<hr>
+
+##### 최종 수정 : 220317 정재빈 

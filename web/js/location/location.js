@@ -19,7 +19,7 @@ $(window).scroll(function () {
          * */
 
         if (Math.round($(window).scrollTop())
-            == $(document).height() - $(window).height()) {
+            === $(document).height() - $(window).height()) {
             $("#to-top").show();
         } else if ($(this).scrollTop()) {
             $("#to-top").show();

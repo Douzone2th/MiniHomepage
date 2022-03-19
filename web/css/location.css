@@ -35,6 +35,11 @@ footer {
     height: 450px;
     border: 1px solid #d9d9d9;
 }
+.container .location #food_rank_map {
+    width: 100%;
+    height: 450px;
+    border: 1px solid #d9d9d9;
+}
 
 .container .location .map-title {
     display: flex;
@@ -43,8 +48,7 @@ footer {
     justify-content: center;
     width: 100%;
     height: 150px;
-    border-bottom: 1px solid #d9d9d9;
-    padding: 10px;
+    padding: 100px;
 }
 
 .container .location .map-title .kosa-link {
@@ -115,7 +119,7 @@ aside {
     margin: 50px 10px;
     grid-area: sidebar;
     border: 1px solid #e5e5e5;
-    border-radius: 4px;
+    border-radius: 15px;
 }
 
 aside ul {
@@ -151,6 +155,7 @@ aside ul li a {
     justify-items: center;
     font-family: "배달의민족 도현";
 }
+
 .nav-item .nav-item-h2 {
     font-size: 15px;
     display: flex;
@@ -165,7 +170,8 @@ aside ul li a {
     display: flex;
     flex-direction: row;
 }
-.nav-item .nav-link.active span{
+
+.nav-item .nav-link.active span {
 
 }
 
@@ -388,3 +394,5 @@ ul.traffic > li > dl.bus dd ul {
 }
 
 /*map 인포윈도우*/
+
+

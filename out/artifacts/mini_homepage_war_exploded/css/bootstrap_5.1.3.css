@@ -4290,10 +4290,6 @@ textarea.form-control-lg {
 .nav-justified .nav-item .nav-link {
     width: 100%;
 }
-.nav-item .nav-link.active{
-    color: red;
-    background-color: cornsilk;
-}
 
 .tab-content > .tab-pane {
     display: none;

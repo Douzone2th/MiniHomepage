@@ -8,6 +8,9 @@ mini-homepage.iml
 .idea/artifacts/
 ./.idea/*
 .idea/
+out/
+out/*
+
 #heesoo gitignore
 
 #sangyoon gitignore

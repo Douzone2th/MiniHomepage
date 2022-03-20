@@ -8,15 +8,15 @@
     <!--    material css-->
     <link href="../../css/material.css" rel="stylesheet">
     <!--    material js-->
-    <script defer src="../../js/lib/material.min.js"></script>
+    <script defer src="../../js/lib/material.js"></script>
     <!--    material icon-->
     <link href="../../css/material-icons.css" rel="stylesheet">
     <!--    location.css-->
     <link href="../../css/location.css" rel="stylesheet">
     <!--    location.js-->
     <script defer src="../../js/location/location.js"></script>
-    <!--    tab.js-->
-    <script defer src="../../js/location/tab.js"></script>
+    <!--    location_food_tab.js-->
+    <script defer src="../../js/location/location_food_tab.js"></script>
 
 </head>
 <body class="body">
@@ -54,23 +54,26 @@
                 맛집장소</h1></a>
             <hr>
         </div>
+
         <div class="mdc-tab-bar" role="tablist">
             <div class="mdc-tab-scroller">
                 <div class="mdc-tab-scroller__scroll-area">
                     <div class="mdc-tab-scroller__scroll-content">
-                        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
-                         <span class="mdc-tab__content">
-                             <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
-                             <span class="mdc-tab__text-label">주변 맛집 TOP5 </span>
-                         </span>
+                        <button id="button_1" class="mdc-tab mdc-tab--active" role="tab" aria-selected="true"
+                                tabindex="0" onclick="onClickSidebar_1()">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__icon material-icons" aria-hidden="true">storefront</span>
+                                <span class="mdc-tab__text-label">주변 맛집 TOP5 </span>
+                            </span>
                             <span class="mdc-tab-indicator mdc-tab-indicator--active">
-                            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                         </span>
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
                             <span class="mdc-tab__ripple"></span>
                         </button>
-                        <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                        <button id="button_2" class="mdc-tab mdc-tab--active" role="tab" aria-selected="false"
+                                tabindex="1" onclick="onClickSidebar_2()">
                          <span class="mdc-tab__content">
-                             <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                             <span class="mdc-tab__icon material-icons" aria-hidden="true">dinner_dining</span>
                              <span class="mdc-tab__text-label">음식사진</span>
                          </span>
                             <span class="mdc-tab-indicator mdc-tab-indicator--active">

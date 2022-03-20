@@ -6359,7 +6359,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.3): tab.js
+   * Bootstrap (v5.1.3): location_food_tab.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */

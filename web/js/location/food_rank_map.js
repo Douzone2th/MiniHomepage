@@ -13,18 +13,24 @@ var positions = [
         latlng: new kakao.maps.LatLng(37.494738316939724, 127.12132721009284)
     },
     {
-        content: '<div>생태연못</div>',
-        latlng: new kakao.maps.LatLng(33.450936, 126.569477)
+        content: '오향가',
+        latlng: new kakao.maps.LatLng(37.49683174957435, 127.12139126913031)
     },
     {
-        content: '<div>텃밭</div>',
-        latlng: new kakao.maps.LatLng(33.450879, 126.569940)
+        content: '아끼야',
+        latlng: new kakao.maps.LatLng(37.49640878087381, 127.12093495945359)
     },
     {
-        content: '<div>근린공원</div>',
-        latlng: new kakao.maps.LatLng(33.451393, 126.570738)
+        content: '만당 불 쭈꾸미',
+        latlng: new kakao.maps.LatLng(37.4957247055887, 127.1204824564849)
+    },
+    {
+        content: '명륜진사갈비 본점',
+        latlng: new kakao.maps.LatLng(37.49403780866266, 127.12296686146954)
     }
 ];
+
+var title = ['함경도 찹쌀순대', '오향가', '아끼야', '만당 불 쭈꾸미', '명륜진사갈비 본점']
 
 for (var i = 0; i < positions.length; i++) {
 
@@ -53,11 +59,11 @@ for (var i = 0; i < positions.length; i++) {
 
         content: '    <div class="info-window">' +
             '        <div class="title" style="color: black">' +
-            '제목' +
+            '제목' + title[i] +
             '        </div>' +
             '        <div style="font-size: 15px">' +
             '            <div>' +
-            '                <div>' + '아아아아아' + '</div>' +
+            '                <div>' + '' + '</div>' +
             '                <div><a href="https://naver.com" starget="_self" class="link">홈페이지</a></div>' +
             '            </div>' +
             '        </div>' +
@@ -65,29 +71,31 @@ for (var i = 0; i < positions.length; i++) {
         ,
         removable: iwRemoveable
     });
+
+    function makeClickListener(map, marker, infowindow) {
+        return function () {
+            infowindow.open(map, marker);
+        };
+    }
+
     kakao.maps.event.addListener(marker, 'click', makeClickListener(map, marker, infowindow));
 
 }
 
-// 인포윈도우를 표시하는 클로저를 만드는 함수입니다
-function makeOverListener(map, marker, infowindow) {
-    return function () {
-        infowindow.open(map, marker);
-    };
-}
+// // 인포윈도우를 표시하는 클로저를 만드는 함수입니다
+// function makeOverListener(map, marker, infowindow) {
+//     return function () {
+//         infowindow.open(map, marker);
+//     };
+// }
+//
+// // 인포윈도우를 닫는 클로저를 만드는 함수입니다
+// function makeOutListener(infowindow) {
+//     return function () {
+//         infowindow.close();
+//     };
+// }
 
-// 인포윈도우를 닫는 클로저를 만드는 함수입니다
-function makeOutListener(infowindow) {
-    return function () {
-        infowindow.close();
-    };
-}
-
-function makeClickListener(map, marker, infowindow) {
-    return function () {
-        window.infowindow.open(map, marker);
-    };
-}
 
 /* 아래와 같이도 할 수 있습니다 */
 /*

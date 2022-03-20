@@ -35,6 +35,7 @@ footer {
     height: 450px;
     border: 1px solid #d9d9d9;
 }
+
 .container .location #food_rank_map {
     width: 100%;
     height: 450px;
@@ -112,28 +113,33 @@ footer {
 /*sidebar*/
 /*사이드바*/
 aside {
-    width: 150px;
+    width: 180px;
     background-color: #f6f5ef;
     position: fixed;
-    height: auto;
+    height: 150px;
     margin: 50px 10px;
     grid-area: sidebar;
-    border: 1px solid #e5e5e5;
-    border-radius: 15px;
 }
 
 aside ul {
     width: 100%;
-
+    height: 150px;
 }
 
 aside ul li {
     width: 100%;
+    height: 50px;
     border: 1px solid #e5e5e5;
 }
 
 aside ul li a {
     width: 100%;
+}
+
+aside ul li .nav-item-h1 {
+    height: 50px;
+    align-items: center;
+    justify-items: center;
 }
 
 .nav-item {
@@ -395,4 +401,21 @@ ul.traffic > li > dl.bus dd ul {
 
 /*map 인포윈도우*/
 
+
+/*location-food tabs*/
+.this:hover .mdc-tab__text-label {
+    background-color: #0097ec;
+    color: white;
+    opacity: 1;
+}
+
+.this:focus .mdc-tab__text-label {
+    background-color: #0097ec;
+    color: white;
+    opacity: 0.3;
+}
+
+.this span {
+
+}
 

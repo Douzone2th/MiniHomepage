@@ -16649,7 +16649,7 @@ a.mdc-list-item {
     height: 24px;
     font-size: 24px;
 }
-
+/*맛집장소 @@@*/
 .mdc-tab--active .mdc-tab__text-label {
     color: #0097ec;
     /* @alternate */
@@ -16833,24 +16833,24 @@ a.mdc-list-item {
     width: var(--mdc-ripple-fg-size, 100%);
     height: var(--mdc-ripple-fg-size, 100%);
 }
-
+/*맛집장소 탭클릭시 @@@*/
 .mdc-tab .mdc-tab__ripple::before, .mdc-tab .mdc-tab__ripple::after {
-    background-color: #6200ee;
+    background-color: #0097ec;
     /* @alternate */
-    background-color: var(--mdc-ripple-color, var(--mdc-theme-primary, #6200ee));
+    background-color: var(--mdc-ripple-color, var(--mdc-theme-primary, #0097ec));
 }
 
 .mdc-tab:hover .mdc-tab__ripple::before, .mdc-tab.mdc-ripple-surface--hover .mdc-tab__ripple::before {
-    opacity: 0.04;
+    opacity: 0.15;
     /* @alternate */
-    opacity: var(--mdc-ripple-hover-opacity, 0.04);
+    opacity: var(--mdc-ripple-hover-opacity, 0.15);
 }
 
 .mdc-tab.mdc-ripple-upgraded--background-focused .mdc-tab__ripple::before, .mdc-tab:not(.mdc-ripple-upgraded):focus .mdc-tab__ripple::before {
     transition-duration: 75ms;
-    opacity: 0.12;
+    opacity: 0.3;
     /* @alternate */
-    opacity: var(--mdc-ripple-focus-opacity, 0.12);
+    opacity: var(--mdc-ripple-focus-opacity, 0.3);
 }
 
 .mdc-tab:not(.mdc-ripple-upgraded) .mdc-tab__ripple::after {
@@ -19114,7 +19114,8 @@ a.mdc-list-item {
 }
 
 :root {
-    --mdc-theme-primary: #6200ee;
+    --mdc-theme-primary0: #ffc107;
+    --mdc-theme-primary: #0097ec;
     --mdc-theme-secondary: #018786;
     --mdc-theme-background: #fff;
     --mdc-theme-surface: #fff;

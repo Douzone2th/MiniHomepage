@@ -25,12 +25,12 @@ var positions = [
         latlng: new kakao.maps.LatLng(37.4957247055887, 127.1204824564849)
     },
     {
-        content: '명륜진사갈비 본점',
-        latlng: new kakao.maps.LatLng(37.49403780866266, 127.12296686146954)
+        content: '뿅의전설',
+        latlng: new kakao.maps.LatLng(37.49499230002788, 127.12389842515762)
     }
 ];
 
-var title = ['함경도 찹쌀순대', '오향가', '아끼야', '만당 불 쭈꾸미', '명륜진사갈비 본점']
+var title = ['함경도 찹쌀순대', '오향가', '아끼야', '만당 불 쭈꾸미', '뿅의전설']
 
 for (var i = 0; i < positions.length; i++) {
 
@@ -83,9 +83,9 @@ for (var i = 0; i < positions.length; i++) {
 }
 
 // // 인포윈도우를 표시하는 클로저를 만드는 함수입니다
-// function makeOverListener(map, marker, infowindow) {
+// function makeOverListener(location_map, marker, infowindow) {
 //     return function () {
-//         infowindow.open(map, marker);
+//         infowindow.open(location_map, marker);
 //     };
 // }
 //
@@ -102,7 +102,7 @@ for (var i = 0; i < positions.length; i++) {
 for (var i = 0; i < positions.length; i ++) {
     // 마커를 생성합니다
     var marker = new kakao.maps.Marker({
-        map: map, // 마커를 표시할 지도
+        location_map: location_map, // 마커를 표시할 지도
         position: positions[i].latlng // 마커의 위치
     });
 
@@ -116,7 +116,7 @@ for (var i = 0; i < positions.length; i ++) {
     (function(marker, infowindow) {
         // 마커에 mouseover 이벤트를 등록하고 마우스 오버 시 인포윈도우를 표시합니다
         kakao.maps.event.addListener(marker, 'mouseover', function() {
-            infowindow.open(map, marker);
+            infowindow.open(location_map, marker);
         });
 
         // 마커에 mouseout 이벤트를 등록하고 마우스 아웃 시 인포윈도우를 닫습니다

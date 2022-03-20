@@ -1,7 +1,9 @@
+// import imageUpdate from "./location_food_modal";
+
 let btnEl_1 = document.querySelector('#button_1')
 let btnEl_2 = document.querySelector('#button_2')
 
-
+// tab
 function onClickSidebar_1() {
     document.getElementById('map').style.display = 'block';
     document.getElementById('food-photo').style.display = 'none';

@@ -1706,7 +1706,7 @@
                         this.unobserve();
                     };
                     /**
-                     * Observe a target's properties for changes using the provided map of
+                     * Observe a target's properties for changes using the provided location_map of
                      * property names and observer functions.
                      *
                      * @template T The target type.
@@ -14240,7 +14240,7 @@
                 /**
                  * Enum for representing an element corner for positioning the menu-surface.
                  *
-                 * The START constants map to LEFT if element directionality is left
+                 * The START constants location_map to LEFT if element directionality is left
                  * to right and RIGHT if the directionality is right to left.
                  * Likewise END maps to RIGHT or LEFT depending on the directionality.
                  */
@@ -19737,7 +19737,7 @@
                         return Boolean(evt.touches);
                     };
                     /**
-                     * Returns a map of all subcomponents to subfoundations.
+                     * Returns a location_map of all subcomponents to subfoundations.
                      */
                     MDCSelect.prototype.getFoundationMap = function () {
                         return {
@@ -29279,7 +29279,7 @@
                         };
                     };
                     /**
-                     * @return A map of all subcomponents to subfoundations.
+                     * @return A location_map of all subcomponents to subfoundations.
                      */
                     MDCTextField.prototype.getFoundationMap = function () {
                         return {
@@ -32604,7 +32604,7 @@
                     /**
                      * Given a list of x/y position options for a rich tooltip with caret, checks
                      * if valid x/y combinations of these position options are either within the
-                     * viewport threshold, or simply within the viewport. Returns a map with the
+                     * viewport threshold, or simply within the viewport. Returns a location_map with the
                      * valid x/y position combinations that all either honor the viewport
                      * threshold or are simply inside within the viewport.
                      */
@@ -34104,4 +34104,4 @@
             /******/
         });
 });
-//# sourceMappingURL=material-components-web.js.map
+//# sourceMappingURL=material-components-web.js.location_map

@@ -3,7 +3,7 @@ var options = { //지도를 생성할 때 필요한 기본 옵션
     center: new kakao.maps.LatLng(37.49510523701345, 127.12241381977768), //지도의 중심좌표.
     level: 3 //지도의 레벨(확대, 축소 정도)
 };
-var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+var location_map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
 
 // 마커 이미지의 이미지 주소입니다
@@ -24,7 +24,7 @@ var positions = [
 
 // 마커를 생성합니다
 var marker = new kakao.maps.Marker({
-    map: map, // 마커를 표시할 지도
+    map: location_map, // 마커를 표시할 지도
     position: positions[0].latlng, // 마커의 위치
     title: positions[0].content, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
     image: markerImage1, // 마커 이미지
@@ -54,9 +54,9 @@ var infowindow = new kakao.maps.InfoWindow({
 // 이벤트 리스너로는 클로저를 만들어 등록합니다
 // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
 
-kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker));
+kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(location_map, marker));
 // kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
-kakao.maps.event.addListener(marker, 'click', makeClickListener(map, marker, infowindow));
+kakao.maps.event.addListener(marker, 'click', makeClickListener(location_map, marker, infowindow));
 
 
 // 인포윈도우를 표시하는 클로저를 만드는 함수입니다

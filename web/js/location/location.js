@@ -1,5 +1,5 @@
+/* 오른쪽 하단 스크롤 올리기 내리기 숨기기 */
 var windowHeight = document.body.scrollHeight;
-
 // 페이지 맨위로 올리기
 const toTopEl = document.querySelector('#to-top');
 
@@ -19,7 +19,7 @@ $(window).scroll(function () {
          * */
 
         if (Math.round($(window).scrollTop())
-            == $(document).height() - $(window).height()) {
+            === $(document).height() - $(window).height()) {
             $("#to-top").show();
         } else if ($(this).scrollTop()) {
             $("#to-top").show();
@@ -30,8 +30,6 @@ $(window).scroll(function () {
     }, 250))
 
 })
-
-
 // 페이지 맨위로 올리기
 toTopEl.addEventListener('click', function () {
     // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
@@ -48,7 +46,7 @@ toBottomEl.addEventListener('click', function () {
     })
 })
 
-
+/* 왼쪽 사이드바 화살표 표시 */
 // active 화살표
 const active = document.querySelector(".active");
 const arrow = document.createElement('span');

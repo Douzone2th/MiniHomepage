@@ -118,6 +118,11 @@ refator:3/21, refactor web/js/main.js
 ---
 ##### font
 - 다양한 google Fonts 및 kopub체 , 배달의 민족체, 엘리스체
+
+헤더 팀명: Jua체 
+헤더 nav: kopub체
+컨테이너(본문) : Do Hyeon체
+푸터: kopub체
 ##### icon
 - [material](https://material.io/search.html?q=filled)
 

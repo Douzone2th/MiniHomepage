@@ -16911,6 +16911,10 @@ a.mdc-list-item {
 .mdc-tab--stacked {
     height: 72px;
 }
+.tab-left-right{
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
 
 /**
  * @license

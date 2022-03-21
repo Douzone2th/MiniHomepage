@@ -1,5 +1,6 @@
 /*common*/
 body {
+    background-color: rgb(242, 243, 245);
     width: 100%;
 }
 
@@ -28,6 +29,12 @@ footer {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+
+}
+
+/*container 안에 색상*/
+.container .location {
+    background-color: #fff;
 }
 
 .container .location #map {
@@ -51,6 +58,9 @@ footer {
     width: 100%;
     height: 150px;
     padding: 100px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+
 }
 
 .container .location .map-title .kosa-link {
@@ -114,23 +124,28 @@ footer {
 /*sidebar*/
 /*사이드바*/
 aside {
-    width: 180px;
-    background-color: #f6f5ef;
+    font-family: "배달의민족 도현";
+    width: 200px;
     position: fixed;
     height: 150px;
-    margin: 50px 10px;
+    margin: 50px 0px 50px 30px;
     grid-area: sidebar;
+    border-radius: 10px;
+    background-color: white;
+    border: 0px solid #0097ec;
 }
 
 aside ul {
     width: 100%;
     height: 150px;
+    border-radius: 10px;
 }
 
-aside ul li {
+aside ul li.nav-item {
     width: 100%;
     height: 50px;
-    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    border: 2px solid #0097ec;
 }
 
 aside ul li a {
@@ -417,7 +432,7 @@ ul.traffic > li > dl.bus dd ul {
 }
 
 #map {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .container .location #food-photo {

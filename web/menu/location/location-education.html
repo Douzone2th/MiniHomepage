@@ -12,7 +12,7 @@
     <!--    material icon-->
     <link href="../../css/material-icons.css" rel="stylesheet">
     <!--    location.css-->
-    <link href="../../css/location.css" rel="stylesheet">
+    <link href="../../css/location/location.css" rel="stylesheet">
     <!--    location.js-->
     <script defer src="../../js/location/location.js"></script>
 </head>
@@ -22,7 +22,7 @@
 </header>
 
 <!--aside subcategory menu-->
-<aside id="aside_bar">
+<aside class="">
     <ul class="nav flex-column">
         <li class="nav-item">
             <h1 class="nav-item-h1">장소</h1>
@@ -48,7 +48,7 @@
             <a class="kosa-link" href="https://www.sw.or.kr/site/sw/main.do" target="_blank"><img
                     src="../../images/kosa.jpg" id="kosa-img"></a>
         </div>
-        <div class="map-subtitle"> 찾아오는 길</div>
+<!--        <div class="map-subtitle"> 찾아오는 길</div>-->
         <div id="map"></div>
         <div class="map-content">
             <ul class="traffic">
@@ -156,9 +156,4 @@
 <!--jQuery-->
 <script type="text/javascript" src="../../js/lib/jQuery.js"></script>
 <!--    header && footer-->
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#header").load("../../_inc/header.html");  //haeder 파일 로드
-        $("#footer").load("../../_inc/footer.html");
-    });
-</script>
+<script type="text/javascript" src="/js/header_footer.js"></script>

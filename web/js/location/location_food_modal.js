@@ -6,11 +6,9 @@ var content = ['경찰병원 근처 현지인 맛집으로 유명한 순대국�
 function onModal(index) {
     document.getElementById('exampleModalLabel').innerText = title[index];
     let a = document.querySelectorAll('.d-block');
-    console.log(a);
 
     for (let i = 0; i < a.length; i++) {
         let src = "../../images/food/image" + (index + 1) + "_" + (i + 1) + ".jpg";
-        console.log(src)
         a[i].setAttribute('src', src);
     }
 }

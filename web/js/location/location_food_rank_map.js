@@ -31,7 +31,9 @@ var positions = [
 ];
 
 var title = ['함경도 찹쌀순대', '오향가', '아끼야', '만당 불 쭈꾸미', '뿅의전설']
-
+var text = ['경찰병원 근처 현지인 맛집으로 유명한 순대국밥.', '3대족발보다 맛있는 경찰병원 오향족발.', '오늘의 메뉴도 있는 등심,안심 돈까스 전문 맛집.'
+    , '석쇠쭈꾸미의 정석 쭈꾸미 맛집.', '칠리새우와 짜장면이 만나는 맛있는 중국집 뿅의전설.']
+var url=['','','','','']
 for (var i = 0; i < positions.length; i++) {
 
     // 마커 이미지의 이미지 주소입니다
@@ -52,23 +54,23 @@ for (var i = 0; i < positions.length; i++) {
         clickable: true
     });
 
+    var info = '    <div class="info-window">' +
+    '               <div class="info-window-title">' + positions[i].content +
+    '               </div>' +
+
+    '               <div class="info-window-sub-title">' +
+    '                       <div>' +
+    '                            <div>' + text[i] + '</div>' +
+    '                       </div>' +
+
+    '                       </div>' +
+    '                </div>' +
+    '               </div>';
     var iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
     // 마커에 표시할 인포윈도우를 생성합니다
     var infowindow = new kakao.maps.InfoWindow({
-
-        content: '    <div class="info-window">' +
-            '        <div class="title" style="color: black">' +
-            '제목' + title[i] +
-            '        </div>' +
-            '        <div style="font-size: 15px">' +
-            '            <div>' +
-            '                <div>' + '' + '</div>' +
-            '                <div><a href="https://naver.com" starget="_self" class="link">홈페이지</a></div>' +
-            '            </div>' +
-            '        </div>' +
-            '    </div>'
-        ,
+        content: info,
         removable: iwRemoveable
     });
 

@@ -1,6 +1,6 @@
 /*common*/
 body {
-    background-color: rgb(242, 243, 245);
+    /*background-color: rgb(242, 243, 245);*/
     width: 100%;
 }
 
@@ -19,8 +19,9 @@ footer {
 
 /*container*/
 .container {
+    font-family: "배달의민족 도현";
     width: 80%;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .container .location {
@@ -29,7 +30,6 @@ footer {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-
 }
 
 /*container 안에 색상*/
@@ -57,10 +57,9 @@ footer {
 
     width: 100%;
     height: 150px;
-    padding: 100px;
+    padding: 50px;
     border: 1px solid #d9d9d9;
     border-radius: 10px;
-
 }
 
 .container .location .map-title .kosa-link {
@@ -119,118 +118,6 @@ footer {
 .container .location .map-content .transport .transport-col {
     display: flex;
     flex-direction: column;
-}
-
-/*sidebar*/
-/*사이드바*/
-aside {
-    font-family: "배달의민족 도현";
-    width: 200px;
-    position: fixed;
-    height: 150px;
-    margin: 50px 0px 50px 30px;
-    grid-area: sidebar;
-    border-radius: 10px;
-    background-color: white;
-    border: 0px solid #0097ec;
-}
-
-aside ul {
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-}
-
-aside ul li.nav-item {
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px solid #0097ec;
-}
-
-aside ul li a {
-    width: 100%;
-}
-
-aside ul li .nav-item-h1 {
-    height: 50px;
-    align-items: center;
-    justify-items: center;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-.nav-item .nav-link {
-    color: black;
-    height: 50px;
-}
-
-.nav-item .nav-item-h1 {
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    font-family: "배달의민족 도현";
-}
-
-.nav-item .nav-item-h2 {
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    font-family: "배달의민족 도현";
-}
-
-.nav-item .nav-link.active {
-    color: dodgerblue;
-    background-color: cornsilk;
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-item .nav-link.active span {
-
-}
-
-/*SCROLL TO TOP*/
-#to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 9;
-    width: 42px;
-    height: 42px;
-    background-color: #333;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*SCROLL TO BOTTOM*/
-#to-bottom {
-    position: fixed;
-    bottom: 30px;
-    right: 70px;
-    z-index: 9;
-    width: 42px;
-    height: 42px;
-    background-color: #333;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* 장소 > 교육장소 > 찾아오시는길 */
@@ -416,7 +303,28 @@ ul.traffic > li > dl.bus dd ul {
 }
 
 /*location_map 인포윈도우*/
+.info-window {
+    width: 180px;
+    height: 80px;
+    border-color: #d9d9d9;
+    border-radius: 10px;
+}
 
+.info-window .info-window-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+}
+
+.info-window .info-window-sub-title .info-window-title-link {
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-window .info-window-sub-title {
+    font-size: 12px;
+}
 
 /*location-food tabs*/
 .this:hover .mdc-tab__text-label {
@@ -462,7 +370,10 @@ ul.traffic > li > dl.bus dd ul {
     height: 50px;
 }
 
-
+.carousel-inner.carousel-item > img{
+    width: 300px;
+    height: 300px;
+}
 
 
 

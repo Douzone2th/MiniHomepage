@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="../js/lib/jQuery.js"></script>
+    <title>알고리즘테스트</title>
+    <script type="text/javascript" src="../js/header_footer.js"></script>
+    <link type="stylesheet" href="../css/main_heesoo.css" />
+    <style type="text/css">
+      @font-face {
+        font-family: "BMDOHYEON";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      .body {
+        font-family: "BMDOHYEON";
+        background-color: rgb(242, 243, 245);
+      }
+      .document_woohyeoung {
+        width: 100%;
+        padding-bottom: 1px;
+
+        color: #000;
+      }
+      .document_item_woohyeoung {
+        width: 700px;
+        padding: 20px 0;
+        height: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #000;
+        border-radius: 10px;
+        position: relative;
+      }
+      .document_item_woohyeoung:hover {
+        width: 715px;
+        height: 55px;
+        border: 2px solid rgb(0, 0, 0);
+        transition: 0.2s;
+
+        background-color: rgb(209, 209, 209);
+      }
+      .document_item_woohyeoung .title_woohyeoung {
+        font-size: 25px;
+        padding-left: 20px;
+        /* font-weight: bold; */
+      }
+      .document_item_woohyeoung .tag_woohyeoung {
+        font-size: 20px;
+        top: 20%;
+        right: 10%;
+        position: absolute;
+      }
+      .document_item_woohyeoung .content_woohyeoung {
+        font-weight: 900;
+        font-size: 13px;
+        bottom: 10%;
+        right: 1%;
+        position: absolute;
+      }
+      .main_modal_woohyeoung {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+      .main_modal_woohyeoung.show {
+        display: block;
+      }
+      .main_modal_body_woohyeoung {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25%;
+        height: 25%;
+        min-width: 600px;
+        min-height: 200px;
+        padding: 10px;
+        overflow: auto;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+        transform: translateX(-50%) translateY(-50%);
+        transition: 0.5s;
+      }
+      .main_modal_body_woohyeoung:hover {
+        width: 50%;
+        min-width: 720px;
+        height: 80%;
+        background-color: rgba(116, 116, 116, 0.6);
+        transition: 0.5s;
+      }
+      .main_modal_body_woohyeoung table {
+        list-style-type: none;
+        width: auto;
+        margin: auto;
+      }
+      .main_modal_body_woohyeoung .subBtn_woohyeoung > img {
+        width: 100px;
+        height: 100px;
+      }
+      .sub_modal_woohyeoung {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all 0.5s;
+      }
+      .sub_modal_body_woohyeoung {
+        background-color: rgba(179, 171, 171, 0.726);
+        border-radius: 10px;
+        margin: 10% auto;
+        border: 1px solid #888;
+        width: 720px;
+      }
+      .sub_modal_body_woohyeoung img {
+        width: 720px;
+      }
+      .close_woohyeoung {
+        color: #000;
+        float: right;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .close_woohyeoung:hover,
+      .close_woohyeoung:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      section {
+        margin-top: 80px;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header" class="header"></div>
+    <section>
+      <!--0317-->
+      <div id="mm7_woohyeoung" class="main_modal_woohyeoung">
+        <div id="mb7" class="main_modal_body_woohyeoung">
+          <table>
+            <th class="table_head_woohyeoung">재 빈</th>
+            <th class="table_head_woohyeoung">상 윤</th>
+            <th class="table_head_woohyeoung">희 수</th>
+            <th class="table_head_woohyeoung">우 형</th>
+            <tr class="table_woohyeoung">
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/jae/0317.png" alt="jae" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/jae/0317.png" alt="jae" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/sang/0317.png" alt="sang" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/sang/0317.png" alt="sang" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/hi/0317.png" alt="hi" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/hi/0317.png" alt="hi" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/woo/0317.png" alt="woo" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/woo/0317.png" alt="woo" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <script>
+          var subModal = document.getElementsByClassName(
+            "sub_modal_woohyeoung"
+          );
+          var subBtn_woohyeoung =
+            document.getElementsByClassName("subBtn_woohyeoung");
+          var spans = document.getElementsByClassName("close_woohyeoung");
+          var funcs = [];
+          function sub(num) {
+            return function () {
+              subBtn_woohyeoung[num].onclick = function () {
+                subModal[num].style.display = "block";
+              };
+              spans[num].onclick = function () {
+                subModal[num].style.display = "none";
+              };
+            };
+          }
+          for (let i = 0; i < subBtn_woohyeoung.length; i++) {
+            funcs[i] = sub(i);
+          }
+          for (let j = 0; j < subBtn_woohyeoung.length; j++) {
+            funcs[j]();
+          }
+          window.onclick = function (event) {
+            if (event.target === subModal) {
+              event.target.style.display = "none";
+            }
+          };
+        </script>
+      </div>
+      <!--0316-->
+      <div id="mm6" class="main_modal_woohyeoung">
+        <div id="mb6" class="main_modal_body_woohyeoung">
+          <table>
+            <th class="table_head_woohyeoung">재 빈</th>
+            <th class="table_head_woohyeoung">상 윤</th>
+            <th class="table_head_woohyeoung">희 수</th>
+            <th class="table_head_woohyeoung">우 형</th>
+            <tr class="table_woohyeoung">
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/jae/0316.png" alt="jae" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/jae/0316.png" alt="jae" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/sang/0316.png" alt="sang" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/sang/0316.png" alt="sang" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/hi/0316.png" alt="hi" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/hi/0316.png" alt="hi" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/woo/0316.png" alt="woo" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/woo/0316.png" alt="woo" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <script>
+          var subModal = document.getElementsByClassName(
+            "sub_modal_woohyeoung"
+          );
+          var subBtn_woohyeoung =
+            document.getElementsByClassName("subBtn_woohyeoung");
+          var spans = document.getElementsByClassName("close_woohyeoung");
+          var funcs = [];
+          function sub(num) {
+            return function () {
+              subBtn_woohyeoung[num].onclick = function () {
+                subModal[num].style.display = "block";
+              };
+              spans[num].onclick = function () {
+                subModal[num].style.display = "none";
+              };
+            };
+          }
+          for (let i = 0; i < subBtn_woohyeoung.length; i++) {
+            funcs[i] = sub(i);
+          }
+          for (let j = 0; j < subBtn_woohyeoung.length; j++) {
+            funcs[j]();
+          }
+          window.onclick = function (event) {
+            if (event.target === subModal) {
+              event.target.style.display = "none";
+            }
+          };
+        </script>
+      </div>
+      <!--0315-->
+      <div id="mm5" class="main_modal_woohyeoung">
+        <div id="mb5" class="main_modal_body_woohyeoung">
+          <table>
+            <th class="table_head_woohyeoung">재 빈</th>
+            <th class="table_head_woohyeoung">상 윤</th>
+            <th class="table_head_woohyeoung">희 수</th>
+            <th class="table_head_woohyeoung">우 형</th>
+            <tr class="table_woohyeoung">
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/jae/0315.png" alt="jae" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/jae/0315.png" alt="jae" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/sang/0315.png" alt="sang" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/sang/0315.png" alt="sang" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/hi/0315.png" alt="hi" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/hi/0315.png" alt="hi" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/woo/0315.png" alt="woo" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/woo/0315.png" alt="woo" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <script>
+          var subModal = document.getElementsByClassName(
+            "sub_modal_woohyeoung"
+          );
+          var subBtn_woohyeoung =
+            document.getElementsByClassName("subBtn_woohyeoung");
+          var spans = document.getElementsByClassName("close_woohyeoung");
+          var funcs = [];
+          function sub(num) {
+            return function () {
+              subBtn_woohyeoung[num].onclick = function () {
+                subModal[num].style.display = "block";
+              };
+              spans[num].onclick = function () {
+                subModal[num].style.display = "none";
+              };
+            };
+          }
+          for (let i = 0; i < subBtn_woohyeoung.length; i++) {
+            funcs[i] = sub(i);
+          }
+          for (let j = 0; j < subBtn_woohyeoung.length; j++) {
+            funcs[j]();
+          }
+          window.onclick = function (event) {
+            if (event.target === subModal) {
+              event.target.style.display = "none";
+            }
+          };
+        </script>
+      </div>
+      <!--0314-->
+      <div id="mm4" class="main_modal_woohyeoung">
+        <div id="mb4" class="main_modal_body_woohyeoung">
+          <table>
+            <th class="table_head_woohyeoung">재 빈</th>
+            <th class="table_head_woohyeoung">상 윤</th>
+            <th class="table_head_woohyeoung">희 수</th>
+            <th class="table_head_woohyeoung">우 형</th>
+            <tr class="table_woohyeoung">
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/jae/0314.png" alt="jae" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/jae/0314.png" alt="jae" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/sang/0314.png" alt="sang" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/sang/0314.png" alt="sang" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/hi/0314.png" alt="hi" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/hi/0314.png" alt="hi" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <li class="subBtn_woohyeoung">
+                  <img src="../images/woo/0314.png" alt="woo" />
+                </li>
+                <div class="sub_modal_woohyeoung">
+                  <div class="sub_modal_body_woohyeoung">
+                    <span class="close_woohyeoung">&times;</span>
+                    <img src="../images/woo/0314.png" alt="woo" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <script>
+          var subModal = document.getElementsByClassName(
+            "sub_modal_woohyeoung"
+          );
+          var subBtn_woohyeoung =
+            document.getElementsByClassName("subBtn_woohyeoung");
+          var spans = document.getElementsByClassName("close_woohyeoung");
+          var funcs = [];
+          function sub(num) {
+            return function () {
+              subBtn_woohyeoung[num].onclick = function () {
+                subModal[num].style.display = "block";
+              };
+              spans[num].onclick = function () {
+                subModal[num].style.display = "none";
+              };
+            };
+          }
+          for (let i = 0; i < subBtn_woohyeoung.length; i++) {
+            funcs[i] = sub(i);
+          }
+          for (let j = 0; j < subBtn_woohyeoung.length; j++) {
+            funcs[j]();
+          }
+          window.onclick = function (event) {
+            if (event.target === subModal) {
+              event.target.style.display = "none";
+            }
+          };
+        </script>
+      </div>
+      <article>
+        <div class="document_woohyeoung">
+          <div class="document_item_woohyeoung" id="0317">
+            <div class="btn-open-popup_woohyeoung">
+              <a class="title_woohyeoung">13414번 수강신청</a
+              ><span class="tag_woohyeoung">백준알고리즘</span>
+            </div>
+            <div class="content_woohyeoung">
+              4<span class="bar_woohyeoung">|</span> 4 TEAM<span
+                class="bar_woohyeoung"
+                >|</span
+              >
+              2022-03-17
+            </div>
+          </div>
+        </div>
+        <div class="document_woohyeoung">
+          <div class="document_item_woohyeoung" id="0316">
+            <div class="btn-open-popup_woohyeoung">
+              <a class="title_woohyeoung">1620번 나는야 포켓몬 마스터 이다솜</a
+              ><span class="tag_woohyeoung">백준알고리즘</span>
+            </div>
+            <div class="content_woohyeoung">
+              3<span class="bar_woohyeoung">|</span> 4 TEAM<span
+                class="bar_woohyeoung"
+                >|</span
+              >
+              2022-03-16
+            </div>
+          </div>
+        </div>
+        <div class="document_woohyeoung">
+          <div class="document_item_woohyeoung" id="0315">
+            <div class="btn-open-popup_woohyeoung">
+              <a class="title_woohyeoung">9375번 패션왕 신해빈</a
+              ><span class="tag_woohyeoung">백준알고리즘</span>
+            </div>
+            <div class="content_woohyeoung">
+              2<span class="bar_woohyeoung">|</span> 4 TEAM<span
+                class="bar_woohyeoung"
+                >|</span
+              >
+              2022-03-15
+            </div>
+          </div>
+        </div>
+        <div class="document_woohyeoung">
+          <div class="document_item_woohyeoung" id="0314">
+            <div class="btn-open-popup_woohyeoung">
+              <a class="title_woohyeoung">1302번 베스트셀러</a
+              ><span class="tag_woohyeoung">백준알고리즘</span>
+            </div>
+            <div class="content_woohyeoung">
+              1<span class="bar_woohyeoung">|</span> 4 TEAM<span
+                class="bar_woohyeoung"
+                >|</span
+              >
+              2022-03-14
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <script>
+      const body = document.querySelector("body");
+
+      //0317
+      const mainModal7 = document.getElementById("mm7_woohyeoung");
+      const mainContent7 = document.getElementById("0317");
+      mainContent7.addEventListener("click", () => {
+        mainModal7.classList.toggle("show");
+        if (mainModal7.classList.contains("show")) {
+          body.style.overflow = "hidden";
+        }
+      });
+      mainModal7.addEventListener("click", (event) => {
+        if (event.target === mainModal7) {
+          mainModal7.classList.toggle("show");
+
+          if (!mainModal7.classList.contains("show")) {
+            body.style.overflow = "auto";
+          }
+        }
+      });
+      //0316
+      const mainModal6 = document.getElementById("mm6");
+      const mainContent6 = document.getElementById("0316");
+      mainContent6.addEventListener("click", () => {
+        mainModal6.classList.toggle("show");
+        if (mainModal6.classList.contains("show")) {
+          body.style.overflow = "hidden";
+        }
+      });
+      mainModal6.addEventListener("click", (event) => {
+        if (event.target === mainModal6) {
+          mainModal6.classList.toggle("show");
+
+          if (!mainModal6.classList.contains("show")) {
+            body.style.overflow = "auto";
+          }
+        }
+      });
+      //0315
+      const mainModal5 = document.getElementById("mm5");
+      const mainContent5 = document.getElementById("0315");
+      mainContent5.addEventListener("click", () => {
+        mainModal5.classList.toggle("show");
+        if (mainModal5.classList.contains("show")) {
+          body.style.overflow = "hidden";
+        }
+      });
+      mainModal5.addEventListener("click", (event) => {
+        if (event.target === mainModal5) {
+          mainModal5.classList.toggle("show");
+
+          if (!mainModal5.classList.contains("show")) {
+            body.style.overflow = "auto";
+          }
+        }
+      });
+      //0314
+      const mainModal4 = document.getElementById("mm4");
+      const mainContent4 = document.getElementById("0314");
+      mainContent4.addEventListener("click", () => {
+        mainModal4.classList.toggle("show");
+        if (mainModal4.classList.contains("show")) {
+          body.style.overflow = "hidden";
+        }
+      });
+      mainModal4.addEventListener("click", (event) => {
+        if (event.target === mainModal4) {
+          mainModal4.classList.toggle("show");
+
+          if (!mainModal4.classList.contains("show")) {
+            body.style.overflow = "auto";
+          }
+        }
+      });
+    </script>
+    <footer id="footer" class="footer" style="position: absolute"></footer>
+  </body>
+</html>

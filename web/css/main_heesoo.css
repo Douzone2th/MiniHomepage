@@ -1,1 +1,140 @@
-/*main.css*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KoPubDotumMedium';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background-color: rgb(242,243,245);
+	font-family: KoPubDotumMedium;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*HEADER*/
+.header {
+  background-color: rgb(242,243,245);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.header a.logo{
+	text-decoration: none;
+	float: left;
+	color: black;
+	font-size: 30px;
+	font-family: 'Jua', sans-serif;
+}
+
+.header .main-menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	
+}
+.header .main-menu ul.menu{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.header .main-menu ul.menu li.item:hover{
+	 background-color: #FFF;
+}
+
+.header .main-menu ul.menu li.item .item__name{
+	font-size: 18px;
+  	font-family: KoPubDotumMedium;
+  	padding: 11px 25px;
+}	
+.header .main-menu ul.menu li.item .item__contents{
+	background-color: #FFF;
+	visibility: hidden;
+	opacity: 0;
+/* 	display: none; */
+}
+.header .main-menu ul.menu li.item:hover .item_contents{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.header .main-menu ul.menu li.item .item__contents ul.inner{
+	list-style: none;
+	position: absolute;
+}
+.header .main-menu ul.menu li.item .item__contents ul.inner > li{
+	font-size:14px;
+	cursor: pointer;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #272727;
+  border-top: 1px solid #333;
+  width: 100%;
+  bottom: 0;
+  padding: 40px 0 60px 0;
+  margin-bottom: 0;
+  clear:both;
+}
+.footer .info{
+	
+	margin-top: 10px;
+	text-align: center;
+}
+.footer .info span{
+	color: #999;
+	font-size: 15px;
+	margin-right: 20px;
+}
+.footer .info span:last-child {
+  margin-right: 0;
+}
+.footer .copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+#carouselExampleControls{
+ 	margin-top: 60px;
+}
+ .carousel-inner{
+        width: 50%;
+        height: auto; 
+        margin: auto;
+        padding: auto;
+}
+.carousel-item {
+	max-width: 50%;
+	height: auto;
+	margin: 10% auto;
+}
+.d-block {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	left: 20%
+}
+
+.carousel_position{
+	margin: auto;
+	top:50%;
+	left:50%;
+}
+
+
+
+

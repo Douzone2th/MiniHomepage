@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .timeline_woohyeoung {
+        margin: auto;
+        display: -webkit-flex;
+        display: flex;
+        width: 70%;
+        height: 150px;
+        white-space: nowrap;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+      .timeline_woohyeoung ol {
+        -webkit-flex: 1;
+        flex: 1;
+        font-size: 0;
+        width: 100vw;
+        padding: 250px 0;
+        transition: all 1s;
+      }
+      .timeline_woohyeoung ol > li {
+        position: relative;
+        display: inline-block;
+        list-style-type: none;
+        width: 160px;
+        height: 3px;
+        background: #000;
+      }
+      .timeline_woohyeoung ol > li:not(:first-child) {
+        margin-left: 14px;
+      }
+      .timeline_woohyeoung ol > li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 1px);
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #000;
+      }
+      .timeline_woohyeoung ol > li > div {
+        position: absolute;
+        left: calc(100% + 7px);
+        text-align: center;
+        width: 25px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1rem;
+        white-space: normal;
+        color: #fff;
+        background: #000;
+      }
+      .timeline_woohyeoung ol > li:hover > div {
+        width: 35px;
+        height: 30px;
+        transition: 0.4s;
+      }
+      .timeline_woohyeoung ol li div::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+
+      .timeline_woohyeoung ol li:nth-child(odd) div {
+        top: -15px;
+        transform: translateY(-100%);
+      }
+
+      .timeline_woohyeoung ol li:nth-child(odd) div::before {
+        top: 90%;
+        border-width: 15px 15px 0 0;
+        border-color: #000 transparent transparent transparent;
+      }
+
+      .timeline_woohyeoung ol li:nth-child(even) div {
+        top: calc(100% + 20px);
+      }
+
+      .timeline_woohyeoung ol li:nth-child(even) div::before {
+        top: -8px;
+        border-width: 15px 0 0 15px;
+        border-color: transparent transparent transparent #000;
+      }
+      .schedule_woohyeoung {
+        width: 70%;
+        display: flex;
+        margin: auto;
+      }
+      .schedule_woohyeoung ul {
+        padding-top: 20px;
+        display: none;
+      }
+      .schedule_woohyeoung ul.show {
+        display: block;
+      }
+      .schedule_woohyeoung .list_head_woohyeoung {
+        list-style-type: none;
+        padding-left: 100px;
+        padding-bottom: 50px;
+        font-size: 40px;
+      }
+      .schedule_woohyeoung .list_woohyeoung {
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="timeline_woohyeoung">
+      <ol>
+        <li><div class="timeline_btn" id="01">1월</div></li>
+        <li><div class="timeline_btn" id="02">2월</div></li>
+        <li><div class="timeline_btn" id="03">3월</div></li>
+        <li><div class="timeline_btn" id="04">4월</div></li>
+        <li><div class="timeline_btn" id="05">5월</div></li>
+        <li><div class="timeline_btn" id="06">6월</div></li>
+        <li><div class="timeline_btn" id="07">7월</div></li>
+      </ol>
+    </article>
+    <section class="schedule_woohyeoung">
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">1월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">2월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">3월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">4월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">5월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">6월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+      <ul class="ul_btn">
+        <li class="list_head_woohyeoung">7월</li>
+        <li class="list_woohyeoung">항목 1</li>
+        <li class="list_woohyeoung">항목 2</li>
+        <li class="list_woohyeoung">항목 3</li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      var month_btn = document.querySelectorAll(".timeline_btn");
+      var month_ul = document.querySelectorAll(".ul_btn");
+
+      month_btn[0].addEventListener("click", () => {
+        month_ul[0].classList.toggle("show");
+      });
+      month_btn[1].addEventListener("click", () => {
+        month_ul[1].classList.toggle("show");
+      });
+      month_btn[2].addEventListener("click", () => {
+        month_ul[2].classList.toggle("show");
+      });
+      month_btn[3].addEventListener("click", () => {
+        month_ul[3].classList.toggle("show");
+      });
+      month_btn[4].addEventListener("click", () => {
+        month_ul[4].classList.toggle("show");
+      });
+      month_btn[5].addEventListener("click", () => {
+        month_ul[5].classList.toggle("show");
+      });
+      month_btn[6].addEventListener("click", () => {
+        month_ul[6].classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

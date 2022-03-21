@@ -39,7 +39,7 @@
 <!--aside subcategory menu-->
 <aside class="">
     <ul class="nav flex-column">
-        <li class="nav-item">
+        <li class="nav-item-title">
             <h1 class="nav-item-h1">News</h1>
         </li>
         <li class="nav-item">
@@ -65,19 +65,21 @@
                 <div class="title fade-in">
                 </div>
                 <div class="fade-in">
-                    <img onmouseover="onMouseOverSang()" onmouseout="onMouseOutSang()"
+                    <img onmouseover="onMouseOverSang()" onmouseout="onMouseOutSang()" onclick="onMouseClick(3)"
                          src="../../images/news/sangyoon.png" alt="" class="sangyoon"/>
                 </div>
                 <div class="fade-in">
-                    <img onmouseover="onMouseOverWoo()" onmouseout="onMouseOutWoo()"
-                         src="../../images/news/woohyoung.png" alt="" class="woohyoung"/>
+                    <img onmouseover="onMouseOverWoo()" onmouseout="onMouseOutWoo()" onclick="onMouseClick(2)"
+                         src="../../images/news/woohyeoung.png" alt="" class="woohyoung"/>
                 </div>
                 <div class="fade-in">
-                    <img onmouseover="onMouseOverHee()" onmouseout="onMouseOutHee()" src="../../images/news/heesoo.png"
+                    <img onmouseover="onMouseOverHee()" onmouseout="onMouseOutHee()" onclick="onMouseClick(1)"
+                         src="../../images/news/heesoo.png"
                          alt="" class="heesoo"/>
                 </div>
                 <div class="fade-in">
-                    <img onmouseover="onMouseOverJae()" onmouseout="onMouseOutJae()" src="../../images/news/jaebin.png"
+                    <img onmouseover="onMouseOverJae()" onmouseout="onMouseOutJae()" onclick="onMouseClick(0)"
+                         src="../../images/news/jaebin.png"
                          alt="" class="jaebin"/>
                 </div>
             </div>
@@ -93,8 +95,67 @@
     </div>
 </div>
 
+<!--modal-->
+<div id="modal" class="main-modal-outside">
+    <div id="main_modal" class="main_modal">
+        <div id="jaebin-news">
+            <div class="news-title">
+                <h1>코로나에 걸리다...</h1>
+            </div>
+            <div class="news-content">
+                <pre>
+                    최근 재빈님은 가족중 한명이 코로나에 걸려
+                    밀접접촉자로 인해 pcr검사를 받게 되었는데...
+                    양성이 떠서 코로나 확진자가 되었습니다.
+                </pre>
+                <p> 다행히도 증상이 없어서 아프지는 않았다는 소식.
+                <h3>코로나 조심하세유!</h3>
+                </p>
+            </div>
+        </div>
+        <div id="heesoo-news">
+            <div class="news-title">
+                <h1>코로나 완치!!!</h1>
+            </div>
+            <div class="news-content">
+                <pre>
+                    최근 희수님은 코로나에 완치하였습니다.
+                    희수님은 코로나로 거의 10일동안 집에있었으나
+                    증상이 호전되지 못하였는데, 이제 많이 좋아져서
+                    교육장에도 매일 나간다고 하네요.
+                </pre>
+                <h3>역시 에이스 답군요!!!</h3>
+            </div>
+        </div>
+        <div id="woohyeoung-news">
+            <div class="news-title">
+                <h1>남쪽나라 사람 서울살이</h1>
+            </div>
+            <div class="news-content">
+                <pre>
+                    제주도에서 올라온 우형님은 북쪽이 춥다고 하네요.
+                    춥고 건조하고 먼지많은 동네에서 살기가 너무 힘들다고 합니다.
+                </pre>
+                <h3>우형님 그래도 제주도로 안돌아가실거죠?</h3>
+            </div>
+        </div>
+        <div id="sangyoon-news">
+            <div class="news-title">
+                <h1>몸짱은 힘들어</h1>
+            </div>
+            <div class="news-content">
+                <pre>
+                    최근 자취를 시작하신 상윤님은
+                    운동을 안하게 될 것 같아서 헬스장을 등록했다고 하는데요.
+                    앞으로 몸짱이되서 캡틴아메리카 같은 몸매를 유지하고 싶다고 하네요.
+                </pre>
+                <h3>헬스 매니아 화이팅!!!</h3>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+</div>
 <!--footer-->
 <footer id="footer" class="footer">
 </footer>
@@ -114,4 +175,5 @@
 <script type="text/javascript" src="../../js/lib/jQuery.js"></script>
 <!--    header && footer-->
 <script type="text/javascript" src="/js/header_footer.js"></script>
-
+<!--ScrollMagic-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>

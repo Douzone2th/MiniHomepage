@@ -31,7 +31,7 @@ var marker = new kakao.maps.Marker({
     image: markerImage1, // 마커 이미지
     clickable: true // 마커를 클릭했을 때 지도의 클릭 이벤트가 발생하지 않도록 설정합니다
 });
-var info = '    <div class="info-window">' +
+var _info = '    <div class="info-window">' +
     '               <div class="info-window-title">' + positions[0].content +
     '               </div>' +
 
@@ -46,41 +46,21 @@ var info = '    <div class="info-window">' +
     '                       </div>' +
     '                </div>' +
     '               </div>';
+
 var iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
 // 마커에 표시할 인포윈도우를 생성합니다
-var infowindow = new kakao.maps.InfoWindow({
-    content: info,
+var _infowindow = new kakao.maps.InfoWindow({
+    position: positions[0].latlng,
+    content: _info,
     removable: iwRemoveable
 });
 
-// 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
-// 이벤트 리스너로는 클로저를 만들어 등록합니다
-// for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
-
-kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(location_map, marker));
-kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
-kakao.maps.event.addListener(marker, 'click', makeClickListener(location_map, marker, infowindow));
-
-
-// 인포윈도우를 표시하는 클로저를 만드는 함수입니다
-function makeOverListener(map, marker,) {
+function _makeClickListener(map, marker, infowindow) {
     return function () {
-        imageMarkerSize = new kakao.maps.Size(100, 200);
-        var markerImage1 = new kakao.maps.MarkerImage(imageMarker1, imageMarkerSize);
-        marker.image = markerImage1;
+        infowindow.open(map, marker);
     };
 }
 
-// 인포윈도우를 닫는 클로저를 만드는 함수입니다
-function makeOutListener(infowindow) {
-    return function () {
-        infowindow.close();
-    };
-}
+kakao.maps.event.addListener(marker, 'click', _makeClickListener(map, marker, _infowindow));
 
-function makeClickListener(map, marker, infowindow) {
-    return function () {
-        window.infowindow.open(map, marker);
-    };
-}

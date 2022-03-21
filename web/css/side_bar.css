@@ -45,6 +45,18 @@ aside ul li .nav-item-h1 {
     justify-items: center;
     flex-direction: column;
 }
+.nav-item:hover {
+   width: 110%;
+}
+.nav-item-title {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
 
 .nav-item .nav-link {
     color: black;
@@ -66,8 +78,8 @@ aside ul li .nav-item-h1 {
 }
 
 li.nav-item .nav-link.active {
-    color: dodgerblue;
-    background-color: cornsilk;
+    color: cornsilk;
+    background-color: dodgerblue;
     display: flex;
     flex-direction: row;
 }

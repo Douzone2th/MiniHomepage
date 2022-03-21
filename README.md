@@ -116,6 +116,8 @@ refator:3/21, refactor web/js/main.js
     - 팀명, 팀 간략한 소개, 시(하상욱)
     - 발자취, 이력, 경력
 ---
+##### background-color
+rgb(242,243,245)
 ##### font
 - 다양한 google Fonts 및 kopub체 , 배달의 민족체, 엘리스체
 

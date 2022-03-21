@@ -117,7 +117,7 @@ refator:3/21, refactor web/js/main.js
     - 발자취, 이력, 경력
 ---
 ##### font
-- 다양한 google Fonts 및 copub체 , 배달의 민족체, 엘리스체
+- 다양한 google Fonts 및 kopub체 , 배달의 민족체, 엘리스체
 ##### icon
 - [material](https://material.io/search.html?q=filled)
 

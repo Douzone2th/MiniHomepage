@@ -12,25 +12,36 @@
     <!--    material icon-->
     <link href="../../css/material-icons.css" rel="stylesheet">
     <!--    location.css-->
-    <link href="../../css/location.css" rel="stylesheet">
-    <!--    location.js-->
-    <script defer src="../../js/location/location.js"></script>
+    <link href="../../css/location/location.css" rel="stylesheet">
+    <!--    side_bar.js-->
+    <script defer src="../../js/side_bar.js"></script>
+    <!--    side_bar.css-->
+    <link href="../../css/side_bar.css" rel="stylesheet">
+    <!--    main_heesoo.css-->
+    <link href="../../css/main_heesoo.css" rel="stylesheet">
+    <!--    google font do hyeon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700&display=swap"
+          rel="stylesheet">
+    <!--scroll to css && js-->
+    <link href="../../css/scroll_to.css" rel="stylesheet">
+    <script defer src="../../js/scroll_to.js"></script>
 </head>
 <body class="body">
 <!--header-->
-<header>
-    <h1>헤더자리</h1>
-    <hr>
+<header id="header" class="header">
 </header>
 
 <!--aside subcategory menu-->
-<aside id="aside_bar">
+<aside class="">
     <ul class="nav flex-column">
         <li class="nav-item">
-            <h1 class="nav-item-h1">장소</h1>
+            <h1 class="nav-item-h1">Location</h1>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="location-education.html"><h2 class="nav-item-h2">교육 장소</h2></a>
+            <a class="nav-link active" aria-current="page" href="location-education.html"><h2 class="nav-item-h2">교육
+                장소</h2></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="location-food.html"><h2 class="nav-item-h2">맛집 장소</h2></a>
@@ -38,7 +49,7 @@
     </ul>
 </aside>
 
-
+<!--container-->
 <div class="container">
     <!--찾아오는 길 지도-->
     <!--section - location_map-->
@@ -49,7 +60,7 @@
             <a class="kosa-link" href="https://www.sw.or.kr/site/sw/main.do" target="_blank"><img
                     src="../../images/kosa.jpg" id="kosa-img"></a>
         </div>
-        <div class="map-subtitle"> 찾아오는 길</div>
+        <!--        <div class="map-subtitle"> 찾아오는 길</div>-->
         <div id="map"></div>
         <div class="map-content">
             <ul class="traffic">
@@ -134,10 +145,9 @@
         <div class="material-icons">arrow_upward</div>
     </div>
 </div>
+
 <!--footer-->
-<footer>
-    <hr>
-    <h1>푸터자리</h1>
+<footer id="footer" class="footer">
 </footer>
 
 </body>
@@ -157,3 +167,5 @@
         crossorigin="anonymous"></script>
 <!--jQuery-->
 <script type="text/javascript" src="../../js/lib/jQuery.js"></script>
+<!--    header && footer-->
+<script type="text/javascript" src="/js/header_footer.js"></script>

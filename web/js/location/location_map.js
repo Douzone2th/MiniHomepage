@@ -19,7 +19,8 @@ var markerImage1 = new kakao.maps.MarkerImage(imageMarker1, imageMarkerSize);
 var positions = [
     {
         content: '한국 소프트웨어 협회',
-        latlng: new kakao.maps.LatLng(37.49510523701345, 127.12241381977768)
+        latlng: new kakao.maps.LatLng(37.49510523701345, 127.12241381977768),
+        text: '소프트웨어산업의 건전한 발전과' + '<br>' + ' 소프트웨어 및 시스템의 이용촉진'
     }];
 
 // 마커를 생성합니다
@@ -30,23 +31,26 @@ var marker = new kakao.maps.Marker({
     image: markerImage1, // 마커 이미지
     clickable: true // 마커를 클릭했을 때 지도의 클릭 이벤트가 발생하지 않도록 설정합니다
 });
+var info = '    <div class="info-window">' +
+    '               <div class="info-window-title">' + positions[0].content +
+    '               </div>' +
 
+    '               <div class="info-window-sub-title">' +
+    '                       <div>' +
+    '                            <div>' + positions[0].text + '</div>' +
+    '                       </div>' +
+    '                       <div class="info-window-title-link"><a class="link" href="https://www.sw.or.kr/site/sw/main.do" target="_blank" >' +
+    '                               홈페이지<span class="material-icons">' +
+    '                                   home' +
+    '                               </span></a>' +
+    '                       </div>' +
+    '                </div>' +
+    '               </div>';
 var iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
 // 마커에 표시할 인포윈도우를 생성합니다
 var infowindow = new kakao.maps.InfoWindow({
-
-    content: '    <div class="info-window">' +
-        '        <div class="title" style="color: black">' +
-        '제목' +
-        '        </div>' +
-        '        <div style="font-size: 15px">' +
-        '            <div>' +
-        '                <div>' + '아아아아아' + '</div>' +
-        '                <div><a href="https://naver.com" starget="_self" class="link">홈페이지</a></div>' +
-        '            </div>' +
-        '        </div>' +
-        '    </div>'
-    ,
+    content: info,
     removable: iwRemoveable
 });
 
@@ -55,16 +59,16 @@ var infowindow = new kakao.maps.InfoWindow({
 // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
 
 kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(location_map, marker));
-// kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
 kakao.maps.event.addListener(marker, 'click', makeClickListener(location_map, marker, infowindow));
 
 
 // 인포윈도우를 표시하는 클로저를 만드는 함수입니다
-function makeOverListener(map, marker) {
+function makeOverListener(map, marker,) {
     return function () {
-       imageMarkerSize = new kakao.maps.Size(100, 200);
-       var markerImage1 = new kakao.maps.MarkerImage(imageMarker1, imageMarkerSize);
-       marker.image = markerImage1;
+        imageMarkerSize = new kakao.maps.Size(100, 200);
+        var markerImage1 = new kakao.maps.MarkerImage(imageMarker1, imageMarkerSize);
+        marker.image = markerImage1;
     };
 }
 

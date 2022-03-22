@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
     <style type="text/css">
+      .container_woohyeoung {
+        width: 80%;
+        margin-left: 5%;
+      }
       .timeline_woohyeoung {
         margin: auto;
         display: -webkit-flex;
@@ -30,7 +35,7 @@
         position: relative;
         display: inline-block;
         list-style-type: none;
-        width: 160px;
+        width: 15%;
         height: 3px;
         background: #000;
       }
@@ -114,22 +119,23 @@
         padding-left: 100px;
         padding-bottom: 50px;
         font-size: 40px;
+        width: 80px;
       }
       .schedule_woohyeoung .list_woohyeoung {
         padding-bottom: 10px;
       }
     </style>
   </head>
-  <body>
+  <body class="container_woohyeoung">
     <article class="timeline_woohyeoung">
       <ol>
-        <li><div class="timeline_btn" id="01">1월</div></li>
-        <li><div class="timeline_btn" id="02">2월</div></li>
-        <li><div class="timeline_btn" id="03">3월</div></li>
-        <li><div class="timeline_btn" id="04">4월</div></li>
-        <li><div class="timeline_btn" id="05">5월</div></li>
-        <li><div class="timeline_btn" id="06">6월</div></li>
-        <li><div class="timeline_btn" id="07">7월</div></li>
+        <li><div class="timeline_btn" id="0">1월</div></li>
+        <li><div class="timeline_btn" id="1">2월</div></li>
+        <li><div class="timeline_btn" id="2">3월</div></li>
+        <li><div class="timeline_btn" id="3">4월</div></li>
+        <li><div class="timeline_btn" id="4">5월</div></li>
+        <li><div class="timeline_btn" id="5">6월</div></li>
+        <li><div class="timeline_btn" id="6">7월</div></li>
       </ol>
     </article>
     <section class="schedule_woohyeoung">
@@ -177,29 +183,13 @@
       </ul>
     </section>
     <script type="text/javascript">
-      var month_btn = document.querySelectorAll(".timeline_btn");
       var month_ul = document.querySelectorAll(".ul_btn");
 
-      month_btn[0].addEventListener("click", () => {
-        month_ul[0].classList.toggle("show");
-      });
-      month_btn[1].addEventListener("click", () => {
-        month_ul[1].classList.toggle("show");
-      });
-      month_btn[2].addEventListener("click", () => {
-        month_ul[2].classList.toggle("show");
-      });
-      month_btn[3].addEventListener("click", () => {
-        month_ul[3].classList.toggle("show");
-      });
-      month_btn[4].addEventListener("click", () => {
-        month_ul[4].classList.toggle("show");
-      });
-      month_btn[5].addEventListener("click", () => {
-        month_ul[5].classList.toggle("show");
-      });
-      month_btn[6].addEventListener("click", () => {
-        month_ul[6].classList.toggle("show");
+      $(".timeline_btn").click((e) => {
+        let $target = $(e.target);
+        let ul_id = $target.attr("id");
+        $(month_ul[ul_id]).toggle("slow");
+        $(month_ul).not(month_ul[ul_id]).hide();
       });
     </script>
   </body>

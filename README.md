@@ -26,8 +26,9 @@ git pull upstream main
 - 올리기전에 pull이나 fetch로 변경점 확인
 첫번째 방법. 
 git pull upstream main
+받기전에 commit 필수!!!
 
-두번째 방법. 
+두번째 방법. ▶▶▶▶▶ upstream main을 받을때는 rebase나 merge를 하는게 좋다.
 git fetch upstream
 git rebase upstream/main
 

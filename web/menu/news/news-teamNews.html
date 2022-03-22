@@ -45,11 +45,11 @@
             <h1 class="nav-item-h1">News</h1>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="news-teamNews.html"><h2 class="nav-item-h2">팀 뉴스</h2>
+            <a class="nav-link active" aria-current="page" href="news-teamNews.html"><h2 class="nav-item-h2" id="news_woohyeoung">팀 뉴스</h2>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><h2 class="nav-item-h2">팀 일정</h2></a>
+            <a class="nav-link" href="#"><h2 class="nav-item-h2" id="schedule_woohyeoung">팀 일정</h2></a>
         </li>
     </ul>
 </aside>
@@ -93,7 +93,10 @@
 
     <!--    schedule-->
     <section class="schedule">
-        <iframe src="news_schedule.html" width="100%" height="auto" ></iframe>
+        <div class="map-title">
+            <h1 id="kosa-title">팀 일정</h1>
+        </div>
+        <iframe id="iframe_schedule" src="news_schedule.html"></iframe>
     </section>
 
     <!--TO BOTTOM BUTTON-->
@@ -189,3 +192,4 @@
 <script type="text/javascript" src="/js/header_footer.js"></script>
 <!--ScrollMagic-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="../../js/news/newsMerge.js"></script>

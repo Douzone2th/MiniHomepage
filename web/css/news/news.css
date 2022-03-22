@@ -35,6 +35,13 @@ footer {
     flex-direction: column;
     text-decoration: none;
 }
+.container .schedule {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
 
 .container .news .map-title {
     display: flex;

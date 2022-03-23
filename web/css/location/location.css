@@ -41,6 +41,7 @@ footer {
     width: 100%;
     height: 500px;
     border: 1px solid #d9d9d9;
+    display: block;
 }
 
 .container .location #food_rank_map {
@@ -101,10 +102,21 @@ footer {
     border-bottom: 1px solid #d9d9d9;
 }
 
+.container .location .map-home-find {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-family: "배달의민족 도현";
+}
+
 .container .location .map-content {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -370,10 +382,22 @@ ul.traffic > li > dl.bus dd ul {
     height: 50px;
 }
 
-.carousel-inner.carousel-item > img{
+.carousel-inner.carousel-item > img {
     width: 300px;
     height: 300px;
 }
 
 
+/*로드뷰*/
+#roadview {
+    width: 100%;
+    height: 450px;
+    display: none;
+}
 
+.map-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+}

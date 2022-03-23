@@ -63,11 +63,21 @@
         </div>
         <!--찾아오는 길 지도-->
         <div id="map"></div>
-        <!--        우리집 찾기-->
+        <!--roadview-->
+        <div id="roadview"></div>
+        <!--        버튼-->
+        <div class="map-btn">
+            <!--        우리집 찾기-->
+            <div class="map-home-find">
+                <button onclick="findHome()" type="button" class="btn btn-outline-primary"> 우리집 찾기</button>
+            </div>
 
-        <div class="map-home-find">
-            <button onclick="findHome()" type="button" class="btn btn-outline-primary"> 우리집 찾기</button>
+            <!--        로드뷰 보기-->
+            <div class="map-home-find">
+                <button onclick="findRoadView()" type="button" class="btn btn-outline-primary btn-on"> 로드뷰 켜기</button>
+            </div>
         </div>
+
 
         <!--        찾아오는길 제목-->
         <div class="map-content">
@@ -154,6 +164,7 @@
     </div>
 </div>
 
+
 <!--footer-->
 <footer id="footer" class="footer">
 </footer>
@@ -163,7 +174,7 @@
 <!--daum find address -->
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <!--    kakao location_map api-->
-<script type="text/javascript" src="../../js/lib/kakao_map_sdk.js"></script>
+<!--<script type="text/javascript" src="../../js/lib/kakao_map_sdk.js"></script>-->
 <!--    kakao map api-->
 <script type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dfdeae896e56a03da14a6dd2108b170d&libraries=services,clusterer,drawing"></script>

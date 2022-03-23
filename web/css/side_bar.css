@@ -3,13 +3,13 @@
 /*사이드바*/
 aside {
     font-family: "배달의민족 도현";
-    width: 200px;
+    width: 10%;
     position: fixed;
     height: 150px;
     margin: 50px 0px 50px 30px;
     grid-area: sidebar;
     border-radius: 10px;
-    border: 0px solid #0097ec;
+    border: 0px solid #d9d9d9;
 }
 
 aside ul {
@@ -64,7 +64,7 @@ aside ul li .nav-item-h1 {
 }
 
 .nav-item .nav-item-h1 {
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-items: center;

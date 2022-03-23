@@ -6,42 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team introduction</title>
     <script src="../../js/team/team_introduction.js" type="text/javascript"></script>
-
+    <!--    main_heesoo.css-->
+    <link href="../../css/main_heesoo.css" rel="stylesheet">
 </head>
-
+<script  src="../../js/team/jquery-3.6.0.js" type="text/javascript"></script>
 <link rel = "stylesheet" href="../../css/team/team_introduction.css" type="text/css">
+<link rel = "stylesheet" href="../../css/team/team_introduction_2.css" type="text/css">
 <body>
-
-<div>
-    <h2 class="title">TEAM INTRODUCTION</h2>
+<!--header-->
+<header id="header" class="header">
+</header>
+<div class="title">
+    <h2>TEAM INTRODUCTION</h2>
     <p class="sub-heading">Douzone 2th 4-Team<br />
       Meet our Team
     </p>
 </div>
 <div class="about__section">
   <a href="javascript:void(0);" title="Jung JaeBin">
-    <div class="about__slot bio">
-    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../images/myphoto.jpg');"></div>
+    <div class="about__slot">
+    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../../images/jaebin.jpg');"></div>
     <div class="about__info">
     <h4 class="name">Jung JaeBin</h4>
     <h5 class="title">Full-Stack Developer</h5>
     </div>
-    <div class="bioText">I am a full stack developer, graphic designer, 3D artist, animator, and entrepreneur.<br /><br /></div>
+    <div class="bioText">안녕하세요. 빠른 적응력으로 새로운 서비스에 도전하는 정재빈입니다.<br /><br /></div>
     </div></a>
 
   <a href="javascript:void(0);" title="Lee Sangyoon">
     <div class="about__slot">
-    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../images/sagnyoon.jpg');"></div>
+    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../../images/sagnyoon.jpg');"></div>
     <div class="about__info">
     <h4 class="name">Lee Sangyoon</h4>
     <h5 class="title">Full-Stack Developer</h5>
     </div>
-    <div class="bioText">Austin Meowers is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
+    <div class="bioText">안녕하세요. 조금 느리지만 꾸준한 개발자, 이상윤입니다.<br><br>f g+ tw li</div>
     </div></a>
 
   <a href="javascript:void(0);" title="Yoon Woohyung">
     <div class="about__slot">
-    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('../images/woohyung.jpg');"></div>
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('../../images/woohyung.jpg');"></div>
     <div class="about__info">
     <h4 class="name">Yoon Woohyung</h4>
     <h5 class="title">Full-Stack Developer</h5>
@@ -50,7 +54,7 @@
     </div></a>
     
   <a href="javascript:void(0);" title="Kim Heesoo"><div class="about__slot">
-    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../images/heesoo.jpg');"></div>
+    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../../images/heesoo.jpg');"></div>
     <div class="about__info">
     <h4 class="name">Kim Heesoo</h4>
     <h5 class="title">Full-Stack Developer</h5>
@@ -58,20 +62,52 @@
     <div class="bioText">Boopafina is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>    
     </div></a>    
     </div>
-<br /><br /><br />
+<br /><br /><br /><br /><br /><br />
 <hr class="one">
-<div class="about__mini">
-  <h2 class="title">About Mini Project</h2>
-  <ul>
-    <li><strong>내용</strong>: 정적 웹페이지 자율 프로젝트</li>
-    <li><strong>기간</strong>: 2022.03.21 ~ 2022.03.22</li>
-    <li><strong>주제</strong>: 팀 소개 페이지</li>
-    <li><strong>역할 분담</strong></li>
-      <ul><li><strong>정재빈</strong></li></ul>
-
-  </ul>
-  </p>
-
+<div class="title">
+  <h2>ABOUT MINI PROJECT</h2>
 </div>
+<div class="about__section">
+  <article>
+    <ul>
+      <li class="icon1">
+        <span>a</span>
+        <!-- tooltip pure css3 -->
+        <label><strong>기간 : </strong>2022.03.21 ~ 2022.03.22</label>
+      </li>
+      <li class="icon2">
+        <span>b</span>
+        <!-- tooltip pure css3 -->
+        <label><strong>내용 : </strong><br />정적 웹페이지 자율 주제 <br> 프로젝트</label>
+      </li>
+      <li class="icon3">
+        <span>c</span>
+        <!-- tooltip pure css3 -->
+        <label><strong>역할 분담</strong>
+          <ul><strong>정재빈</strong>
+            <li>location</li>         
+          </ul>
+        </label>
+      </li>
+    </ul>
+  </article>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<hr class="one">
+
+<div class="title">
+  <h2>TEAM VISION</h2>
+</div>
+
+<div class="about__section_poem">
+  <img src="../../images/poem.png" alt="Team Vision">
+</div>
+<br /><br /><br />
+
+<!--footer-->
+<footer id="footer" class="footer">
+</footer>
 </body>
 </html>
+<!--    header && footer-->
+<script type="text/javascript" src="../../js/header_footer.js"></script>

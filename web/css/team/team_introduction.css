@@ -1,16 +1,14 @@
 .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 100px;
   font-size: 44px;
   line-height: normal;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.3px;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100px;
 }
 
 .sub-heading{
@@ -25,8 +23,8 @@
 }
 
 hr.one{
-  width:1200px;
-
+  width:1000px;
+  margin: auto;
 }
 
 .about__mini ul{
@@ -51,7 +49,17 @@ svg {
 .about__section {
   width: 960px;
   margin: auto;
+  text-align: center;
 }
+
+
+.about__section_poem {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(243, 240, 240);
+}
+
 
 .about__section .about__slot {
   width:33%;
@@ -203,3 +211,5 @@ svg {
 .about__section .about__slot:hover .about__info {
     background-color:rgba(0,0,0,0.42);
 }
+
+

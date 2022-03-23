@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'IconBlack';
+    src: url('https://cdn.rawgit.com/pedromsduarte/Multicoloured-font-icons-/9faccf44/2012/fonts/iconblack-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IconGray';
+    src: url('https://cdn.rawgit.com/pedromsduarte/Multicoloured-font-icons-/9faccf44/2012/fonts/icongray-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IconOrange';
+    src: url('https://cdn.rawgit.com/pedromsduarte/Multicoloured-font-icons-/9faccf44/2012/fonts/iconorange-regular-webfont.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* article {
+  position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -96px;
+} */
+
+article ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+article li {
+	font-size: 8em;
+	line-height: 1em;
+	display: inline-block;
+	position: relative;
+	width: 260px;
+	cursor: pointer;
+    list-style: circle;
+}
+
+article ul li label ul li {
+	font-size: 1em;
+}
+
+
+
+li span, li span:before, li span:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* watch icon */
+.icon1 span:before {
+	content: "a";
+	color: #F7931D;
+	font-family: IconOrange;
+	line-height: 162px;
+}
+
+.icon1 span {
+	color: #383739;
+	font-family: IconBlack;
+  line-height: 160px;
+}
+
+.icon1 span:after {
+	content: "a";
+	color: #C2B49A;
+	font-family: IconGray;
+	line-height: 140px;
+}
+
+/* search icon */
+.icon2 span:before {
+	content: "b";
+	color: #F7931D;
+	font-family: IconOrange;
+	line-height: 182px;
+}
+
+.icon2 span {
+	color: #383739;
+	font-family: IconBlack;
+	line-height: 192px;
+}
+
+.icon2 span:after {
+	content: "b";
+	color: #C2B49A;
+	font-family: IconGray;
+	line-height: 226px;
+}
+
+/* graph icon */
+.icon3 span:before {
+	content: "c";
+	color: #F7931D;
+	font-family: IconOrange;
+	line-height: 172px;
+}
+
+.icon3 span {
+	color: #383739;
+	font-family: IconBlack;
+  line-height: 164px
+}
+
+.icon3 span:after {
+	content: "c";
+	color: #C2B49A;
+	font-family: IconGray;
+	line-height: 212px;
+}
+
+/* tooltips */
+
+article ul li label strong{
+    font-size: 20px;
+}
+
+li.icon1 label
+{
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	position: absolute;
+	font-size: .15em;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-weight: lighter;
+	line-height: 22px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	border-radius: 10px;
+	border: 3px solid #F7931D;
+}
+
+li.icon2 label
+{
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	position: absolute;
+	font-size: .11em;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-weight: lighter;
+	line-height: 22px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	border-radius: 10px;
+	border: 3px solid #F7931D;
+}
+
+li.icon3 label
+{
+	visibility: hidden;
+	overflow: hidden;
+	height: 0;
+	position: absolute;
+	font-size: .10em;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-weight: lighter;
+	line-height: 22px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	border-radius: 10px;
+	border: 3px solid #F7931D;
+    display: inline-block;
+}
+
+li:hover label
+{
+	visibility: visible;
+	height: auto;
+}

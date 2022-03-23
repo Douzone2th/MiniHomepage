@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--제이쿼리-->
+    <script type="text/javascript" src="/js/lib/jQuery.js"></script>
+
+    <!--헤더푸터-->
+    <script type="text/javascript" src="/js/header_footer.js"></script>
+    <link rel="stylesheet" href="/css/main_heesoo.css" />
+
+    <!--갤러리-->
+    <script defer type="text/javascript" src="/js/gallery/gallery.js"></script>
+    <link rel="stylesheet" href="/css/gallery/gallery.css" />
+    <!--사이드바-->
+    <script defer src="../../js/side_bar.js"></script>
+    <link href="../../css/side_bar.css" rel="stylesheet">
+    <!--메테리얼-->
+    <script src="../../js/lib/material.js"></script>
+    <link href="../../css/material.css" rel="stylesheet">
+    <link href="../../css/material-icons.css" rel="stylesheet">
+
+    <title>Team4 | mini-homepage-gallery</title>
+  </head>
+  <body>
+    <!--헤더-->
+    <div id="header" class="header"></div>
+
+    <!--사이드바-->
+    <aside class="">
+      <ul class="nav flex-column">
+          <li class="nav-item-title">
+              <h1 class="nav-item-h1">Report</h1>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./gallery-individual.html""><h2 class="nav-item-h2">개인 과제</h2></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./gallery-team.html"><h2 class="nav-item-h2">팀 과제</h2></a>
+          </li>
+      </ul>
+    </aside>
+    
+    <!--모달창-->
+    <section>
+      <div class="mainModal">
+        <div class="mainModalBody" >
+          <span class="close_modal" onclick="modalClose()">&times;</span>
+          <table>
+            <th>재 빈</th>
+            <th>상 윤</th>
+            <th>희 수</th>
+            <th>우 형</th>
+            <tr>
+                <!--모달 리스트-->
+                <td class="modal_img">
+                  <img
+                    id="jae/"
+                    src="/images/emoti/jaebin.png"
+                    onclick="subOpen(id)"
+                  />
+                </td>
+                <td class="modal_img">
+                  <img
+                    id="sang/"
+                    src="/images/emoti/sangyoon.png"
+                    onclick="subOpen(id)"
+                  />
+                </td>
+                <td class="modal_img">
+                  <img
+                    id="hi/"
+                    src="/images/emoti/heesoo.png"
+                    onclick="subOpen(id)"
+                  />
+                </td>
+                <td class="modal_img">
+                  <img
+                    id="woo/"
+                    src="/images/emoti/woohyeoung.png"
+                    onclick="subOpen(id)"
+                  />
+                </td>
+                <!--서브 모달창-->
+                <div class="subModal">
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!--알고리즘 리스트-->
+    <section>
+      <div class="document_list">
+        <!--7일-->
+        <div class="document_item" id="0322" onclick="modalOpen(id)">
+          <a class="title_item">14425번 문자열집합</a>
+          <span class="tag_item">백준알고리즘</span>
+          <div class="content_item">
+            7<span>|</span> 4 TEAM<span>|</span>
+            2022-03-22
+          </div>
+        </div>
+        <!--6일-->
+        <div class="document_item" id="0321" onclick="modalOpen(id)">
+          <a class="title_item">14244번 트리만들기</a>
+          <span class="tag_item">백준알고리즘</span>
+          <div class="content_item">
+            6<span>|</span> 4 TEAM<span>|</span>
+            2022-03-21
+          </div>
+        </div>
+        <!--5일-->
+        <div class="document_item" id="0318" onclick="modalOpen(id)">
+          <a class="title_item">레벨 2 : 전화번호 목록</a>
+          <span class="tag_item">프로그래머스</span>
+          <div class="content_item">
+            5<span>|</span> 4 TEAM<span>|</span>
+            2022-03-18
+          </div>
+        </div>
+        <!--4일-->
+        <div class="document_item" id="0317" onclick="modalOpen(id)">
+          <a class="title_item">13414번 수강신청</a>
+          <span class="tag_item">백준알고리즘</span>
+          <div class="content_item">
+            4<span>|</span> 4 TEAM<span>|</span>
+            2022-03-17
+          </div>
+        </div>
+        <!--3일-->
+        <div class="document_item" id="0316" onclick="modalOpen(id)">
+          <a class="title_item">1620번 나는야 포켓몬 마스터 이다솜</a>
+          <span class="tag_item">백준알고리즘</span>
+          <div class="content_item">
+            3<span>|</span> 4 TEAM<span>|</span>
+            2022-03-16
+          </div>
+        </div>
+        <!--2일-->
+        <div class="document_item" id="0315" onclick="modalOpen(id)">
+          <a class="title_item">9375번 패션왕 신해빈</a>
+          <span class="tag_item">백준알고리즘</span>
+          <div class="content_item">
+            2<span>|</span> 4 TEAM<span>|</span>
+            2022-03-15
+          </div>
+        </div>
+        <!--1일-->
+        <div class="document_item" id="0314" onclick="modalOpen(id)">
+          <a class="title_item">1302번 베스트셀러</a>
+          <span class="tag_item">백준알고리즘</span>
+          <div class="content_item">
+            1<span>|</span> 4 TEAM<span>|</span>
+            2022-03-14
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--푸터-->
+    <div id="footer" class="footer"></div>
+  </body>
+</html>

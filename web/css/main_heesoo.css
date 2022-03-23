@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
 	font-family: 'KoPubDotumMedium';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff')
@@ -7,17 +8,6 @@
 	font-style: normal;
 }
 
-<<<<<<< HEAD
-=======
-body {
-	font-family: KoPubDotumMedium;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
->>>>>>> e26a2dd (merge:3/23, merge to upstream main)
 /*HEADER*/
 .header {
 	background-color: rgb(242, 243, 245);
@@ -27,12 +17,6 @@ body {
 	top: 0;
 	z-index: 9;
 	border-bottom: 1px solid #c8c8c8;
-}
-
-/* active 스크롤 내릴시 */
-.header.active {
-	background-color: black;
-	color: white;
 }
 
 .header a.logo {
@@ -49,6 +33,7 @@ body {
 	right: 0;
 	z-index: 1;
 }
+
 .header .main-menu ul.menu {
 	list-style: none;
 	display: flex;
@@ -56,9 +41,11 @@ body {
 	margin: 0;
 	cursor: pointer;
 }
+
 .header .main-menu ul.menu li.item {
 	width: 150px;
 }
+
 .header .main-menu ul.menu li.item:hover {
 	background-color: #fff;
 	color: black;
@@ -70,17 +57,20 @@ body {
 	padding: 11px 25px;
 	text-align: center;
 }
+
 .header .main-menu ul.menu li.item .item__contents {
 	visibility: hidden;
 	opacity: 0;
 	z-index: 10;
 }
+
 .header .main-menu ul.menu li.item:hover .item__contents {
 	opacity: 1;
 	visibility: visible;
 	font-size: 18px;
 	font-family: KoPubDotumMedium;
 }
+
 .header .main-menu ul.menu li.item .item__contents ul.inner {
 	background-color: rgb(242, 243, 245);
 	width: 150px;
@@ -90,6 +80,7 @@ body {
 	align-items: center;
 	position: absolute;
 }
+
 .header .main-menu ul.menu li.item .item__contents ul.inner > li {
 	font-size: 14px;
 	cursor: pointer;
@@ -106,134 +97,25 @@ body {
 	margin-bottom: 0;
 	clear: both;
 }
+
 .footer .info {
 	margin-top: 10px;
 	text-align: center;
 }
+
 .footer .info span {
 	color: #999;
 	font-size: 15px;
 	margin-right: 20px;
 }
+
 .footer .info span:last-child {
 	margin-right: 0;
 }
+
 .footer .copyright {
 	color: #999;
 	font-size: 12px;
 	text-align: center;
 	margin-top: 12px;
 }
-
-<<<<<<< HEAD
-=======
-.tech_wrap {
-	white-space: nowrap;
-	overflow-x: auto;
-	width: 100%;
-	position: relative;
-	margin: 30px 0;
-}
-
-ul.tech_tab {
-	text-align: center;
-	z-index: 1;
-	position: relative;
-}
-
-ul.tech_tab li {
-	display: inline-block;
-	text-align: center;
-}
-
-ul.tech_tab li a {
-	display: inline-block;
-	font: 400 21px/30px 'Open Sans', 'Noto Sans KR', sans-serif;
-	color: #666;
-	position: relative;
-	transition: all 0.3s;
-	padding: 9px 15px;
-	border-radius: 0 15px 15px 15px;
-	text-decoration: none;
-}
-ul.tech_tab li a.on {
-	display: inline-block;
-	font: 400 21px/30px 'Noto Sans KR', sans-serif;
-	color: #fff;
-	background: rgb(127, 127, 127);
-	transition: all 0.2s;
-}
-
-.main_info .min_cont {
-	height: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-ul.info_list li {
-	list-style: none;
-	position: relative;
-	height: auto;
-	float: left;
-	background: #fff;
-	border: solid 1px #ddd;
-	width: auto;
-	border-radius: 0 25px 25px 25px;
-	box-sizing: border-box;
-	padding: 10px;
-}
-
-ul.info_list li:hover {
-	transition: all 0.3s;
-	cursor: pointer;
-	border: 1px solid transparent;
-	background-image: linear-gradient(#fff, #fff),
-		linear-gradient(to right, #c8aae6, #99b2e5, #7fb7e5); /* 그라데이션 */
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	border-radius: 0 25px 25px 25px;
-	box-shadow: 9px 10px 23px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* ul.info_list li:nth-child(n+4) {
-	margin-top: 23px;
-}
-
-ul.info_list li:nth-child(1) {
-	margin-right: 23px;
-}
-
-ul.info_list li:nth-child(4) {
-
-}
-
- ul.info_list li:nth-child(5) { 
-	display: none;
-}
-
-ul.info_list li:nth-child(3n) {
-	margin-right: 23px;
-	margin-top: 23px;
-} */
-
-#info01 ul.info_list li {
-	height: 300px;
-	width: 300px;
-}
-#info01 ul.info_list li {
-	margin-right: 23px;
-}
-
-#info01 ul.info_list li.info_li > img {
-	width: 250px;
-	height: auto;
-	margin-left: 10%;
-}
-
-#info01 ul.info_list li.info_li > span {
-	margin-left: 45%;
-	font-family: 'Do Hyeon', sans-serif;
-	font-size: 20px;
-}
->>>>>>> e26a2dd (merge:3/23, merge to upstream main)

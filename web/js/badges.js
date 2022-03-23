@@ -31,31 +31,30 @@ floatingObject('.floating3', 1.5, 20);
 
 //스크롤시 헤더 색깔
 $(window).scroll(function () {
-	clearTimeout($.data(this, 'scrollTimer'));
-	$.data(
-		this,
-		'scrollTimer',
-		setTimeout(function () {
-			/**
-			 * $(window).scrollTop()
-			 * : 스크롤의 위치에 따라 변하는 값 (세로 좌표)
-			 * : 맨 위에서 0으로 시작하여 맨아래 도달시 스크롤 길이 max값을 가짐.
-			 * */
+	var windowHeight = document.body.scrollHeight;
+	var scrollBottom = $(document).height() - $(window).height();
+	this.black();
 
-			if (
-				Math.round($(window).scrollTop()) ===
-				$(document).height() - $(window).height()
-			) {
-				$('#to-top').show();
-			} else if ($(this).scrollTop()) {
-				$('#to-top').show();
-				$('#to-bottom').show();
-			} else {
-				$('#to-bottom').show();
-			}
-		}, 250)
-	);
+	if (!$(window).scrollTop()) {
+		this.white();
+	} else if (Math.round($(window).scrollTop()) === scrollBottom) {
+		this.white();
+	}
 });
+
+function black() {
+	$('.header').addClass('active');
+	$('.logo').css('color', 'white');
+	$('.inner').css({
+		color: 'black',
+		'background-color': 'rgb(242, 243, 245)',
+	});
+}
+
+function white() {
+	$('.header').removeClass('active');
+	$('.logo').css('color', 'black');
+}
 
 // 날씨를 해볼까?
 function onClickBadges_w() {}

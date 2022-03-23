@@ -51,17 +51,25 @@
 
 <!--container-->
 <div class="container">
-    <!--찾아오는 길 지도-->
+
     <!--section - location_map-->
     <section class="location">
+        <!--        찾아오는길 제목-->
         <div class="map-title">
             <a class="kosa-link" href="https://www.sw.or.kr/site/sw/main.do" target="_blank"><h1 id="kosa-title">
                 교육장소</h1></a>
             <a class="kosa-link" href="https://www.sw.or.kr/site/sw/main.do" target="_blank"><img
                     src="../../images/kosa.jpg" id="kosa-img"></a>
         </div>
-        <!--        <div class="map-subtitle"> 찾아오는 길</div>-->
+        <!--찾아오는 길 지도-->
         <div id="map"></div>
+        <!--        우리집 찾기-->
+
+        <div class="map-home-find">
+            <button onclick="findHome()" type="button" class="btn btn-outline-primary"> 우리집 찾기</button>
+        </div>
+
+        <!--        찾아오는길 제목-->
         <div class="map-content">
             <ul class="traffic">
                 <li class="col1">
@@ -134,8 +142,8 @@
                 </li>
             </ul>
         </div>
-
     </section>
+
     <!--TO BOTTOM BUTTON-->
     <div id="to-bottom">
         <div class="material-icons">arrow_downward</div>
@@ -152,8 +160,14 @@
 
 </body>
 </html>
+<!--daum find address -->
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <!--    kakao location_map api-->
 <script type="text/javascript" src="../../js/lib/kakao_map_sdk.js"></script>
+<!--    kakao map api-->
+<script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dfdeae896e56a03da14a6dd2108b170d&libraries=services,clusterer,drawing"></script>
+
 <!--    location_map-->
 <script type="text/javascript" src="../../js/location/location_map.js"></script>
 <!--bootstrap-->

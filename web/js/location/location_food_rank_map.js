@@ -65,7 +65,7 @@ for (var i = 0; i < positionsArr.length; i++) {
         '                       <div>' +
         '                            <div>' + text[i] + '</div>' +
         '                       </div>' +
-        '                            <button id="btn' + i + '" type="button" class="btn-outline-primary btn-on">로드뷰 켜기</button>' +
+        // '                            <button id="btn' + i + '" type="button" class="btn-outline-primary btn-on">로드뷰 켜기</button>' +
         '                       </div>' +
         '                </div>' +
         '               </div>';

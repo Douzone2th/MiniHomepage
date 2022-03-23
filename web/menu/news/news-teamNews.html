@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="UTF-8">
     <title>Team4 | mini-homepage-news</title>
@@ -21,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
     <!--scroll to css && js-->
     <link href="../../css/scroll_to.css" rel="stylesheet">
     <script defer src="../../js/scroll_to.js"></script>
@@ -33,160 +34,160 @@
     <!--    <script defer src="../../js/news/schedule.js"></script>-->
 
 </head>
+
 <body class="body">
-<!--header-->
-<header id="header" class="header">
-</header>
+    <!--header-->
+    <header id="header" class="header">
+    </header>
 
-<!--aside subcategory menu-->
-<aside class="">
-    <ul class="nav flex-column">
-        <li class="nav-item-title">
-            <h1 class="nav-item-h1">News</h1>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="news-teamNews.html"><h2 class="nav-item-h2"
-                                                                                         id="news_woohyeoung">팀 뉴스</h2>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><h2 class="nav-item-h2" id="schedule_woohyeoung">팀 일정</h2></a>
-        </li>
-    </ul>
-</aside>
+    <!--aside subcategory menu-->
+    <aside class="">
+        <ul class="nav flex-column">
+            <li class="nav-item-title">
+                <h1 class="nav-item-h1">News</h1>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="news-teamNews.html">
+                    <h2 class="nav-item-h2" id="news_woohyeoung">팀 뉴스</h2>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <h2 class="nav-item-h2" id="schedule_woohyeoung">팀 일정</h2>
+                </a>
+            </li>
+        </ul>
+    </aside>
 
-<!--container-->
-
-
-<div class="container">
-    <!--    news-->
-    <section class="news">
-        <div class="map-title">
-            <h1 id="kosa-title">팀 뉴스</h1>
-        </div>
-        <!--        <div class="map-subtitle"> 찾아오는 길</div>-->
-        <!--VISUAL-->
-        <section class="visual">
-            <div class="inner">
-                <div class="title fade-in">
-                </div>
-                <div class="fade-in">
-                    <img onmouseover="onMouseOverSang()" onmouseout="onMouseOutSang()" onclick="onMouseClick(3)"
-                         src="../../images/news/sangyoon.png" alt="" class="sangyoon"/>
-                </div>
-                <div class="fade-in">
-                    <img onmouseover="onMouseOverWoo()" onmouseout="onMouseOutWoo()" onclick="onMouseClick(2)"
-                         src="../../images/news/woohyeoung.png" alt="" class="woohyoung"/>
-                </div>
-                <div class="fade-in">
-                    <img onmouseover="onMouseOverHee()" onmouseout="onMouseOutHee()" onclick="onMouseClick(1)"
-                         src="../../images/news/heesoo.png"
-                         alt="" class="heesoo"/>
-                </div>
-                <div class="fade-in">
-                    <img onmouseover="onMouseOverJae()" onmouseout="onMouseOutJae()" onclick="onMouseClick(0)"
-                         src="../../images/news/jaebin.png"
-                         alt="" class="jaebin"/>
-                </div>
+    <!--container-->
+    <div class="container">
+        <!--    news-->
+        <section class="news">
+            <div class="map-title">
+                <h1 id="kosa-title">팀 뉴스</h1>
             </div>
+            <!--        <div class="map-subtitle"> 찾아오는 길</div>-->
+            <!--VISUAL-->
+            <section class="visual">
+                <div class="inner">
+                    <div class="title fade-in">
+                    </div>
+                    <div class="fade-in">
+                        <img onmouseover="onMouseOverSang()" onmouseout="onMouseOutSang()" onclick="onMouseClick(3)"
+                            src="../../images/news/sangyoon.png" alt="" class="sangyoon" />
+                    </div>
+                    <div class="fade-in">
+                        <img onmouseover="onMouseOverWoo()" onmouseout="onMouseOutWoo()" onclick="onMouseClick(2)"
+                            src="../../images/news/woohyeoung.png" alt="" class="woohyoung" />
+                    </div>
+                    <div class="fade-in">
+                        <img onmouseover="onMouseOverHee()" onmouseout="onMouseOutHee()" onclick="onMouseClick(1)"
+                            src="../../images/news/heesoo.png" alt="" class="heesoo" />
+                    </div>
+                    <div class="fade-in">
+                        <img onmouseover="onMouseOverJae()" onmouseout="onMouseOutJae()" onclick="onMouseClick(0)"
+                            src="../../images/news/jaebin.png" alt="" class="jaebin" />
+                    </div>
+                </div>
+            </section>
         </section>
-    </section>
 
-    <!--    schedule-->
-    <section class="schedule">
-        <div class="map-title">
-            <h1 id="kosa-title">팀 일정</h1>
-        </div>
-        <iframe id="iframe_schedule" src="news_schedule.html"></iframe>
-    </section>
-
-    <!--TO BOTTOM BUTTON-->
-    <div id="to-bottom">
-        <div class="material-icons">arrow_downward</div>
-    </div>
-    <!--TO TOP BUTTON-->
-    <div id="to-top">
-        <div class="material-icons">arrow_upward</div>
-    </div>
-</div>
-
-
-<!--modal-->
-<div id="modal" class="main-modal-outside">
-    <div id="main_modal" class="main_modal">
-        <div id="jaebin-news">
-            <div class="news-title">
-                <h1>코로나에 걸리다...</h1>
+        <!--    schedule-->
+        <section class="schedule">
+            <div class="map-title">
+                <h1 id="kosa-title">팀 일정</h1>
             </div>
-            <div class="news-content">
-                <pre>
+            <iframe id="iframe_schedule" src="news_schedule.html"></iframe>
+        </section>
+
+        <!--TO BOTTOM BUTTON-->
+        <div id="to-bottom">
+            <div class="material-icons">arrow_downward</div>
+        </div>
+        <!--TO TOP BUTTON-->
+        <div id="to-top">
+            <div class="material-icons">arrow_upward</div>
+        </div>
+    </div>
+
+
+    <!--modal-->
+    <div id="modal" class="main-modal-outside">
+        <div id="main_modal" class="main_modal">
+            <div id="jaebin-news">
+                <div class="news-title">
+                    <h1>코로나에 걸리다...</h1>
+                </div>
+                <div class="news-content">
+                    <pre>
                     최근 재빈님은 가족중 한명이 코로나에 걸려
                     밀접접촉자로 인해 pcr검사를 받게 되었는데...
                     양성이 떠서 코로나 확진자가 되었습니다.
                 </pre>
-                <p> 다행히도 증상이 없어서 아프지는 않았다는 소식.
-                <h3>코로나 조심하세유!</h3>
-                </p>
+                    <p> 다행히도 증상이 없어서 아프지는 않았다는 소식.
+                    <h3>코로나 조심하세유!</h3>
+                    </p>
+                </div>
             </div>
-        </div>
-        <div id="heesoo-news">
-            <div class="news-title">
-                <h1>코로나 완치!!!</h1>
-            </div>
-            <div class="news-content">
-                <pre>
+            <div id="heesoo-news">
+                <div class="news-title">
+                    <h1>코로나 완치!!!</h1>
+                </div>
+                <div class="news-content">
+                    <pre>
                     최근 희수님은 코로나에 완치하였습니다.
                     희수님은 코로나로 거의 10일동안 집에있었으나
                     증상이 호전되지 못하였는데, 이제 많이 좋아져서
                     교육장에도 매일 나간다고 하네요.
                 </pre>
-                <h3>역시 에이스 답군요!!!</h3>
+                    <h3>역시 에이스 답군요!!!</h3>
+                </div>
             </div>
-        </div>
-        <div id="woohyeoung-news">
-            <div class="news-title">
-                <h1>남쪽나라 사람 서울살이</h1>
-            </div>
-            <div class="news-content">
-                <pre>
+            <div id="woohyeoung-news">
+                <div class="news-title">
+                    <h1>남쪽나라 사람 서울살이</h1>
+                </div>
+                <div class="news-content">
+                    <pre>
                     제주도에서 올라온 우형님은 북쪽이 춥다고 하네요.
                     춥고 건조하고 먼지많은 동네에서 살기가 너무 힘들다고 합니다.
                 </pre>
-                <h3>우형님 그래도 제주도로 안돌아가실거죠?</h3>
+                    <h3>우형님 그래도 제주도로 안돌아가실거죠?</h3>
+                </div>
             </div>
-        </div>
-        <div id="sangyoon-news">
-            <div class="news-title">
-                <h1>몸짱은 힘들어</h1>
-            </div>
-            <div class="news-content">
-                <pre>
+            <div id="sangyoon-news">
+                <div class="news-title">
+                    <h1>몸짱은 힘들어</h1>
+                </div>
+                <div class="news-content">
+                    <pre>
                     최근 자취를 시작하신 상윤님은
                     운동을 안하게 될 것 같아서 헬스장을 등록했다고 하는데요.
                     앞으로 몸짱이되서 캡틴아메리카 같은 몸매를 유지하고 싶다고 하네요.
                 </pre>
-                <h3>헬스 매니아 화이팅!!!</h3>
+                    <h3>헬스 매니아 화이팅!!!</h3>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-</div>
-<!--footer-->
-<footer id="footer" class="footer">
-</footer>
+    </div>
+    <!--footer-->
+    <footer id="footer" class="footer">
+    </footer>
 
 </body>
+
 </html>
 <!--bootstrap-->
 <script type="text/javascript" src="../../js/lib/bootstrap_5.1.3.js"></script>
 <!--GSAP & ScrollToPlugin-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-        crossorigin="anonymous"></script>
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-        integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
-        crossorigin="anonymous"></script>
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>
 <!--jQuery-->
 <script type="text/javascript" src="../../js/lib/jQuery.js"></script>
 <!--    header && footer-->

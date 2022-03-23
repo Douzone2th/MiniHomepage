@@ -1,135 +1,134 @@
 /*common*/
 body {
-    /*background-color: rgb(242, 243, 245);*/
-    width: 100%;
+	/*background-color: rgb(242, 243, 245);*/
+	width: 100%;
 }
 
 .body {
-    overflow-y: auto;
-    height: 100px;
+	overflow-y: auto;
+	height: 100px;
 }
 
 header {
-    text-align: center;
+	text-align: center;
 }
 
 footer {
-    text-align: center;
+	text-align: center;
 }
 
 /*container*/
 .container {
-    font-family: "배달의민족 도현";
-    width: 80%;
-    margin: 100px auto;
+	font-family: '배달의민족 도현';
+	width: 80%;
+	margin: 100px auto;
 }
 
 .container .location {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
 }
 
 /*container 안에 색상*/
 .container .location {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .container .location #map {
-    width: 100%;
-    height: 500px;
-    border: 1px solid #d9d9d9;
-    display: block;
+	width: 100%;
+	height: 500px;
+	border: 1px solid #d9d9d9;
+	display: block;
 }
 
 .container .location #food_rank_map {
-    width: 100%;
-    height: 450px;
-    border: 1px solid #d9d9d9;
+	width: 100%;
+	height: 450px;
+	border: 1px solid #d9d9d9;
 }
 
 .container .location .map-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
 
-    width: 100%;
-    height: 150px;
-    padding: 50px;
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
+	width: 100%;
+	height: 150px;
+	padding: 50px;
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
 }
 
 .container .location .map-title .kosa-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 }
 
 .container .location .map-title .kosa-link #kosa-title {
-    color: black;
+	color: black;
 }
 
 .container .location .map-title .kosa-link #kosa-title:hover {
-    color: #86b7fe;
+	color: #86b7fe;
 }
 
 .container .location .map-title .kosa-link #kosa-img {
-    width: 200px;
-    height: 130px;
+	width: 200px;
+	height: 130px;
 }
 
 .container .location .map-subtitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-    height: 30px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	width: 100%;
+	height: 30px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
 }
 
 .container .location .map-content {
-    font-family: "배달의민족 도현";
-    border-left: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+	font-family: '배달의민족 도현';
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
 }
 
 .container .location .map-home-find {
-    display: flex;
-    align-items: end;
-    justify-content: right;
+	display: flex;
+	align-items: end;
+	justify-content: right;
 
-    margin-right: 10px;
-    margin-top: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
 
-    font-family: "배달의민족 도현";
+	font-family: '배달의민족 도현';
 }
 
 .container .location .map-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .transport-row {
-    display: flex;
-    flex-direction: row;
-    margin: 2px;
-
+	display: flex;
+	flex-direction: row;
+	margin: 2px;
 }
 
 .container .location .map-content .transport .transport-col {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 /* 장소 > 교육장소 > 찾아오시는길 */
@@ -139,45 +138,45 @@ footer {
 /*}*/
 
 ul.traffic {
-    margin: 50px 10px;
-    padding: 0px
+	margin: 50px 10px;
+	padding: 0px;
 }
 
 ul.traffic:after {
-    display: block;
-    content: '';
-    clear: both;
+	display: block;
+	content: '';
+	clear: both;
 }
 
 ul.traffic > li {
-    float: left;
-    box-sizing: border-box;
-    list-style-type: none;
+	float: left;
+	box-sizing: border-box;
+	list-style-type: none;
 }
 
 ul.traffic > li.col1 {
-    width: 47%;
+	width: 47%;
 }
 
 ul.traffic > li.col2 {
-    width: 53%;
-    /*border-left: 1px solid #d9d9d9;*/
+	width: 53%;
+	/*border-left: 1px solid #d9d9d9;*/
 }
 
 ul.traffic > li > dl {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 15px;
 }
 
 ul.traffic > li > dl dt {
-    font-size: 1.1em;
-    font-weight: 700;
-    padding-bottom: 5px;
+	font-size: 1.1em;
+	font-weight: 700;
+	padding-bottom: 5px;
 }
 
 ul.traffic > li > dl dd {
-    padding: 0px 0;
+	padding: 0px 0;
 }
 
 /*ul.traffic > li > dl.address {*/
@@ -193,66 +192,66 @@ ul.traffic > li > dl dd {
 /*}*/
 
 ul.traffic > li > dl.traffic dl {
-    padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 ul.traffic > li > dl.traffic dd.line1 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #003499;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #003499;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.traffic dd.line3 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #fa5f2c;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #fa5f2c;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.traffic dd.line7 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #606d00;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #606d00;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.traffic dd.line8 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #e71e6e;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #e71e6e;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.traffic dd:before {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #e71e6e;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #e71e6e;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.traffic span {
-    font-size: 1.1em;
-    padding-left: 10px;
+	font-size: 1.1em;
+	padding-left: 10px;
 }
 
 ul.traffic > li > dl.traffic dd ul {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 /*ul.traffic > li > dl.bus {*/
@@ -260,144 +259,156 @@ ul.traffic > li > dl.traffic dd ul {
 /*}*/
 
 ul.traffic > li > dl.bus dl {
-    padding-bottom: 0px;
-    padding-top: 10px;
+	padding-bottom: 0px;
+	padding-top: 10px;
 }
 
 ul.traffic > li > dl.bus dd.trunk1 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #002060;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #002060;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.bus dd.trunk2 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #13b050;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #13b050;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.bus dd.trunk3 {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #f17f2b;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #f17f2b;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.bus dd:before {
-    color: #fff;
-    font-size: 14px;
-    line-height: 1;
-    padding: 5px 15px 6px;
-    border-radius: 100px;
-    background: #e71e6e;
-    display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	padding: 5px 15px 6px;
+	border-radius: 100px;
+	background: #e71e6e;
+	display: inline-block;
 }
 
 ul.traffic > li > dl.bus span {
-    font-size: 1.1em;
-    padding-left: 10px;
-    line-height: 2;
+	font-size: 1.1em;
+	padding-left: 10px;
+	line-height: 2;
 }
 
 ul.traffic > li > dl.bus dd ul {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 /*location_map 인포윈도우*/
 .info-window {
-    width: 180px;
-    height: 80px;
-    border-color: #d9d9d9;
-    border-radius: 10px;
+	width: 180px;
+	height: 80px;
+	border-color: #d9d9d9;
+	border-radius: 10px;
 }
 
 .info-window .info-window-title {
-    display: flex;
-    flex-direction: row;
-    font-size: 17px;
+	display: flex;
+	flex-direction: row;
+	font-size: 17px;
 }
 
 .info-window .info-window-sub-title .info-window-title-link {
-    font-size: 17px;
-    align-items: center;
-    justify-content: center;
+	font-size: 17px;
+	align-items: center;
+	justify-content: center;
 }
 
 .info-window .info-window-sub-title {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 /*location-food tabs*/
 .this:hover .mdc-tab__text-label {
-    background-color: #0097ec;
-    color: white;
-    opacity: 1;
+	background-color: #0097ec;
+	color: white;
+	opacity: 1;
 }
 
 .this:focus .mdc-tab__text-label {
-    background-color: #0097ec;
-    color: white;
-    opacity: 0.3;
+	background-color: #0097ec;
+	color: white;
+	opacity: 0.3;
 }
 
 #map {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 .container .location #food-photo {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
 }
 
 .container .location #food-photo .row .card {
-    margin: 20px;
+	margin: 20px;
 }
 
 .container .location #food-photo .row .card .card-img-top {
-    width: 250px;
-    height: 200px;
+	width: 250px;
+	height: 200px;
 }
 
 .container .location #food-photo .row .card .card-title {
-    width: auto;
-    height: 25px;
+	width: auto;
+	height: 25px;
 }
 
 .container .location #food-photo .row .card .card-text {
-    width: auto;
-    height: 50px;
+	width: auto;
+	height: 50px;
 }
 
 .carousel-inner.carousel-item > img {
-    width: 300px;
-    height: 300px;
+	width: 300px;
+	height: 300px;
 }
-
 
 /*로드뷰*/
 #roadview {
-    width: 100%;
-    height: 450px;
-    display: none;
+	width: 100%;
+	height: 450px;
+	display: none;
 }
 
-.map-btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: end;
+.map-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: end;
+}
+
+#kosa-location-title {
+	display: flex;
+	align-items: start;
+	justify-content: left;
+	margin-left: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.img_w_h {
+	width: 100%;
+	height: 700px;
 }

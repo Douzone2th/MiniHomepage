@@ -87,6 +87,8 @@ function findHome() {
                     positions.content = address
                     var result = results[0]; //첫번째 결과의 값을 활용 // 해당 주소에 대한 좌표를 받아서
                     var coords = new daum.maps.LatLng(result.y, result.x); // 지도를 보여준다.
+                    location_x = result.y;
+                    location_y = result.x;
                     container.style.display = "block";
                     location_map.relayout(); // 지도 중심을 변경한다.
                     location_map.setCenter(coords); // 마커를 결과값으로 받은 위치로 옮긴다.
@@ -102,11 +104,10 @@ var roadviewContainer = document.getElementById('roadview'); //로드뷰를 표�
 var roadview = new kakao.maps.Roadview(roadviewContainer); //로드뷰 객체
 var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
 
-var position = new kakao.maps.LatLng(location_x, location_y);
-
 
 //로드뷰 보기
 function findRoadView() {
+    var position = new kakao.maps.LatLng(location_x, location_y);
     if ($('#map').css('display') == 'block') {
         $('#map').css('display', 'none');
         $('#roadview').css('display', 'block');

@@ -1,108 +1,159 @@
+let windowOuterWidth = 0;
+let windowOuterHeight = 0;
+
+// 웹페이지 첫 로드 되면 실행
+$(() => {
+	console.log('로드 다됬니?');
+	windowOuterWidth = window.outerWidth;
+	windowOuterHeight = window.outerHeight;
+	console.log(windowOuterWidth);
+	console.log(windowOuterHeight);
+	// $('.heesoo').css({
+	// 	top: windowOuterHeight * 0.25,
+	// 	left: windowOuterWidth * 0.25,
+	// });
+	// $('.jaebin').css({
+	// 	top: windowOuterHeight * 0.6,
+	// 	left: windowOuterWidth * 0.35,
+	// });
+	// $('.woohyoung').css({
+	// 	top: windowOuterHeight * 0.25,
+	// 	right: windowOuterWidth * 0.4,
+	// });
+	// $('.sangyoon').css({
+	// 	top: windowOuterHeight * 0.5,
+	// 	right: windowOuterWidth * 0.25,
+	// });
+	// //
+	// //
+	// $('.show').css({
+	// 	top: windowOuterHeight * 0.1,
+	// 	left: windowOuterWidth * 0.1,
+	// });
+	// $('.jaebin .show').css({
+	// 	top: windowOuterHeight * 0.6,
+	// 	left: windowOuterWidth * 0.35,
+	// });
+	// $('.woohyoung .show').css({
+	// 	top: windowOuterHeight * 0.25,
+	// 	right: windowOuterWidth * 0.4,
+	// });
+	// $('.sangyoon .show').css({
+	// 	top: windowOuterHeight * 0.5,
+	// 	right: windowOuterWidth * 0.25,
+	// });
+});
+
 /**
  * 순서대로 나타나는 기능
  */
 // 나타날 요소들(.fade-in) 찾기.
-const fadeEls = document.querySelectorAll('.visual .fade-in')
+const fadeEls = document.querySelectorAll('.visual .fade-in');
 // 나타날 요소들을 하나씩 반복해서 처리!
 fadeEls.forEach(function (fadeEl, index) {
-    // 각 요소들을 순서대로(delay) 보여지게 함!
-    gsap.to(fadeEl, 1, {
-        delay: (index + 1) * .4,
-        opacity: 1
-    })
-})
+	// 각 요소들을 순서대로(delay) 보여지게 함!
+	gsap.to(fadeEl, 1, {
+		delay: (index + 1) * 0.4,
+		opacity: 1,
+	});
+});
 
 /**
  * 각자의 사진에 마우스를 올리면?
  * */
 function onMouseOverSang() {
-    $('.sangyoon').attr('src', '../../images/news/sangyoon_r.png');
+	$('.sangyoon').attr('src', '../../images/news/sangyoon_r.png');
 }
 
 function onMouseOutSang() {
-    $('.sangyoon').attr('src', '../../images/news/sangyoon.png');
+	$('.sangyoon').attr('src', '../../images/news/sangyoon.png');
 }
 
 function onMouseOverWoo() {
-    $('.woohyoung').attr('src', '../../images/news/woohyeoung_r.png');
+	$('.woohyoung').attr('src', '../../images/news/woohyeoung_r.png');
 }
 
 function onMouseOutWoo() {
-    $('.woohyoung').attr('src', '../../images/news/woohyeoung.png');
+	$('.woohyoung').attr('src', '../../images/news/woohyeoung.png');
 }
 
 function onMouseOverHee() {
-    $('.heesoo').attr('src', '../../images/news/heesoo_r.png');
+	$('.heesoo').attr('src', '../../images/news/heesoo_r.png');
 }
 
 function onMouseOutHee() {
-    $('.heesoo').attr('src', '../../images/news/heesoo.png');
+	$('.heesoo').attr('src', '../../images/news/heesoo.png');
 }
 
 function onMouseOverJae() {
-    $('.jaebin').attr('src', '../../images/news/jaebin_r.png');
+	$('.jaebin').attr('src', '../../images/news/jaebin_r.png');
 }
 
 function onMouseOutJae() {
-    $('.jaebin').attr('src', '../../images/news/jaebin.png');
+	$('.jaebin').attr('src', '../../images/news/jaebin.png');
 }
 
-var arrName = ["정재빈", "김희수", "윤우형", "이상윤"]
-var arrClassName = [".jaebin", ".heesoo", ".woohyoung", ".sangyoon"]
-var arrIdName = ["#jaebin-news", "#heesoo-news", "#woohyeoung-news", "#sangyoon-news"]
+var arrName = ['정재빈', '김희수', '윤우형', '이상윤'];
+var arrClassName = ['.jaebin', '.heesoo', '.woohyoung', '.sangyoon'];
+var arrIdName = [
+	'#jaebin-news',
+	'#heesoo-news',
+	'#woohyeoung-news',
+	'#sangyoon-news',
+];
 
 /**
  * 각자의 사진에 마우스 클릭시?
  * */
 function onMouseClick(index) {
-    const main_js = document.getElementById("modal");
-    const main_modal_js = document.getElementById("main_modal");
+	const main_js = document.getElementById('modal');
+	const main_modal_js = document.getElementById('main_modal');
 
-    const main = $('#modal');
-    const mainModal = $('#main_modal');
+	const main = $('#modal');
+	const mainModal = $('#main_modal');
 
-    const jaebin = document.querySelector(arrClassName[index]);
-    const heesoo = document.querySelector(arrClassName[index]);
-    const woohyeoung = document.querySelector(arrClassName[index]);
-    const sangyoon = document.querySelector(arrClassName[index]);
+	const jaebin = document.querySelector(arrClassName[index]);
+	const heesoo = document.querySelector(arrClassName[index]);
+	const woohyeoung = document.querySelector(arrClassName[index]);
+	const sangyoon = document.querySelector(arrClassName[index]);
 
-    if (!(main_js.classList.contains("show"))) {
-        mainModal.toggle("show");
-        main.toggle("show");
-        if (index == 0) {
-            jaebin.classList.toggle('show');
-            console.log($(arrClassName[index]).css("display"));
-            if ($(arrIdName[index]).css("display") == "none") {
-                $('#jaebin-news').css("display", "block");
-            } else {
-                $('#jaebin-news').css("display", "none");
-            }
-        } else if (index == 1) {
-            heesoo.classList.toggle('show');
-            if ($(arrIdName[index]).css("display") == "none") {
-                $('#heesoo-news').css("display", "block");
-            } else {
-                $('#heesoo-news').css("display", "none");
-            }
-        } else if (index == 2) {
-            woohyeoung.classList.toggle('show');
-            if ($(arrIdName[index]).css("display") == "none") {
-                $('#woohyeoung-news').css("display", "block");
-            } else {
-                $('#woohyeoung-news').css("display", "none");
-            }
-        } else if (index == 3) {
-            sangyoon.classList.toggle('show');
-            if ($(arrIdName[index]).css("display") == "none") {
-                $('#sangyoon-news').css("display", "block");
-            } else {
-                $('#sangyoon-news').css("display", "block");
-            }
-        }
-    } else {
-        $('#jaebin-news').css("display", "none");
-        $('#heesoo-news').css("display", "none");
-        $('#woohyeoung-news').css("display", "none");
-        $('#sangyoon-news').css("display", "none");
-    }
+	if (!main_js.classList.contains('show')) {
+		mainModal.toggle('show');
+		main.toggle('show');
+		if (index == 0) {
+			jaebin.classList.toggle('show');
+			console.log($(arrClassName[index]).css('display'));
+			if ($(arrIdName[index]).css('display') == 'none') {
+				$('#jaebin-news').css('display', 'block');
+			} else {
+				$('#jaebin-news').css('display', 'none');
+			}
+		} else if (index == 1) {
+			heesoo.classList.toggle('show');
+			if ($(arrIdName[index]).css('display') == 'none') {
+				$('#heesoo-news').css('display', 'block');
+			} else {
+				$('#heesoo-news').css('display', 'none');
+			}
+		} else if (index == 2) {
+			woohyeoung.classList.toggle('show');
+			if ($(arrIdName[index]).css('display') == 'none') {
+				$('#woohyeoung-news').css('display', 'block');
+			} else {
+				$('#woohyeoung-news').css('display', 'none');
+			}
+		} else if (index == 3) {
+			sangyoon.classList.toggle('show');
+			if ($(arrIdName[index]).css('display') == 'none') {
+				$('#sangyoon-news').css('display', 'block');
+			} else {
+				$('#sangyoon-news').css('display', 'none');
+			}
+		}
+	} else {
+		$('#jaebin-news').css('display', 'none');
+		$('#heesoo-news').css('display', 'none');
+		$('#woohyeoung-news').css('display', 'none');
+		$('#sangyoon-news').css('display', 'none');
+	}
 }

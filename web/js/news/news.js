@@ -2,51 +2,11 @@ let windowOuterWidth = 0;
 let windowOuterHeight = 0;
 
 // 웹페이지 첫 로드 되면 실행
-$(() => {
-	console.log('로드 다됬니?');
-	windowOuterWidth = window.outerWidth;
-	windowOuterHeight = window.outerHeight;
-	console.log(windowOuterWidth);
-	console.log(windowOuterHeight);
-	// $('.heesoo').css({
-	// 	top: windowOuterHeight * 0.25,
-	// 	left: windowOuterWidth * 0.25,
-	// });
-	// $('.jaebin').css({
-	// 	top: windowOuterHeight * 0.6,
-	// 	left: windowOuterWidth * 0.35,
-	// });
-	// $('.woohyoung').css({
-	// 	top: windowOuterHeight * 0.25,
-	// 	right: windowOuterWidth * 0.4,
-	// });
-	// $('.sangyoon').css({
-	// 	top: windowOuterHeight * 0.5,
-	// 	right: windowOuterWidth * 0.25,
-	// });
-	// //
-	// //
-	// $('.show').css({
-	// 	top: windowOuterHeight * 0.1,
-	// 	left: windowOuterWidth * 0.1,
-	// });
-	// $('.jaebin .show').css({
-	// 	top: windowOuterHeight * 0.6,
-	// 	left: windowOuterWidth * 0.35,
-	// });
-	// $('.woohyoung .show').css({
-	// 	top: windowOuterHeight * 0.25,
-	// 	right: windowOuterWidth * 0.4,
-	// });
-	// $('.sangyoon .show').css({
-	// 	top: windowOuterHeight * 0.5,
-	// 	right: windowOuterWidth * 0.25,
-	// });
-});
 
 /**
  * 순서대로 나타나는 기능
  */
+console.log(1123);
 // 나타날 요소들(.fade-in) 찾기.
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 // 나타날 요소들을 하나씩 반복해서 처리!

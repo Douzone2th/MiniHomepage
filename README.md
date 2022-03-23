@@ -4,6 +4,32 @@
 
 <a href="#bottom" style= " font-size:35px">과제 확인 click</a>
 
+- local에 upastream 최신화 후 작업하기
+```
+--- 작업 전 upstream/main 과 merge , 병합, 합치기 (소스트리에 pull 이라고 생각합시다.)
+
+git fetch upstream
+
+git add .
+
+git commit -m "merge:3/23, merge to upstream main before"
+
+git rebase upstream/main
+
+<여기서 충돌나면 충돌 고쳐주세요>
+
+... 작업 중...
+
+--- 작업 후 ---
+git add . 
+git commit -m "feat:3/23, 메인페이지 완료나 진행중"
+git push origin main
+
+
+그리고 pull request
+
+```
+
 - git 명령어 
 ```
 - 깃 초기 셋팅(원하는 본인의 디렉토리에서)

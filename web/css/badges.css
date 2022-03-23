@@ -1,0 +1,25 @@
+/*BADGES*/
+.badges {
+	position: fixed;
+	top: 80px;
+	right: 25px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.badges .badge {
+	border-radius: 70%;
+	border: 1px solid #c8c8c8;
+	background: white;
+	overflow: hidden;
+	margin-bottom: 12px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	z-index: 9;
+}
+.badge-1 {
+	width: 80px;
+	height: 80px;
+}

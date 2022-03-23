@@ -101,6 +101,8 @@
         </div>
         <!--        지도-->
         <div id="map"></div>
+        <!--roadview-->
+        <div id="roadview"></div>
         <!--        음식사진-->
         <div id="food-photo">
             <div class="row">
@@ -153,7 +155,17 @@
                 </div>
             </div>
         </div>
+
+        <!--        버튼-->
+        <div class="map-btn">
+            <!--        지도 보기-->
+            <div class="map-home-find">
+                <button onclick="findMap()" type="button" class="btn btn-outline-primary"> 지도 보기</button>
+            </div>
+
+        </div>
     </section>
+
 </div>
 
 <!-- Modal -->
@@ -228,8 +240,13 @@
 
 </body>
 </html>
+<!--jQuery-->
+<script type="text/javascript" src="../../js/lib/jQuery.js"></script>
 <!--    kakao location_map api-->
-<script type="text/javascript" src="../../js/lib/kakao_map_sdk.js"></script>
+<!--<script type="text/javascript" src="../../js/lib/kakao_map_sdk.js"></script>-->
+<!--    kakao map api-->
+<script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dfdeae896e56a03da14a6dd2108b170d&libraries=services,clusterer,drawing"></script>
 <!--    food_rank_map-->
 <script type="text/javascript" src="../../js/location/location_food_rank_map.js"></script>
 <!--bootstrap-->
@@ -241,7 +258,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
         integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
         crossorigin="anonymous"></script>
-<!--jQuery-->
-<script type="text/javascript" src="../../js/lib/jQuery.js"></script>
 <!--    header && footer-->
 <script type="text/javascript" src="/js/header_footer.js"></script>

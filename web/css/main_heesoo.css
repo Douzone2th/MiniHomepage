@@ -95,10 +95,11 @@
 	width: 150px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 0;
 	list-style: none;
 	align-items: center;
 	position: absolute;
-	text-align: left;
+	text-align: center;
 }
 
 .header .main-menu ul.menu li.item .item__contents ul.inner>li {

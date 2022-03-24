@@ -1,14 +1,22 @@
-/*sidebar*/
-/*사이드바*/
 @font-face {
-	font-family: "BMDOHYEON";
-	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
-	  format("woff");
+	font-family: 'BMDOHYEON';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff')
+		format('woff');
 	font-weight: normal;
 	font-style: normal;
-  }
+}
 
-aside {
+@font-face {
+	font-family: 'KoPubDotumMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*sidebar*/
+/*사이드바*/
+.aside-bar {
 	font-family: 'BMDOHYEON';
 	width: 10%;
 	position: fixed;

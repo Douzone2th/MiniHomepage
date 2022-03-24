@@ -1,245 +1,257 @@
 @font-face {
-	font-family: 'BMDOHYEON';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff')
-		format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .body {
-	font-family: 'BMDOHYEON';
-	background-color: rgb(242, 243, 245);
+  font-family: "BMDOHYEON";
+  background-color: rgb(242, 243, 245);
+}
+.map-title {
+  font-family: "BMDOHYEON";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  width: 50%;
+  height: 150px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-size: 38px;
 }
 
+section {
+  font-family: "BMDOHYEON";
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 .document_list {
-	font-family: 'BMDOHYEON';
-	width: 100%;
-	padding-bottom: 1px;
+  font-family: "BMDOHYEON";
+  width: 100%;
+  padding-bottom: 1px;
 
-	color: #000;
+  color: #000;
 }
 
 .document_item {
-	width: 700px;
-	padding: 20px 0;
-	height: 50px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #000;
-	border-radius: 10px;
-	position: relative;
+  width: 50%;
+  padding: 20px 0;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: relative;
 }
 
 .document_item:hover {
-	width: 715px;
-	height: 55px;
-	border: 2px solid rgb(0, 0, 0);
-	transition: 0.2s;
+  width: 52%;
+  height: 55px;
+  border: 2px solid rgb(0, 0, 0);
+  transition: 0.2s;
 
-	background-color: rgb(209, 209, 209);
+  background-color: rgb(209, 209, 209);
 }
 
 .document_item .title_item {
-	font-size: 25px;
-	padding-left: 20px;
-	/* font-weight: bold; */
+  font-size: 25px;
+  padding-left: 20px;
+  /* font-weight: bold; */
 }
 
 .document_item .tag_item {
-	font-size: 20px;
-	top: 20%;
-	right: 10%;
-	position: absolute;
+  font-size: 20px;
+  top: 20%;
+  right: 10%;
+  position: absolute;
 }
 
 .document_item .content_item {
-	font-weight: 900;
-	font-size: 13px;
-	bottom: 10%;
-	right: 1%;
-	position: absolute;
+  font-weight: 900;
+  font-size: 13px;
+  bottom: 10%;
+  right: 1%;
+  position: absolute;
 }
 
 .mainModal {
-	font-family: 'BMDOHYEON';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: none;
-	background-color: rgba(0, 0, 0, 0.4);
-	z-index: 1;
+  font-family: "BMDOHYEON";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .mainModalBody {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 25%;
-	height: 25%;
-	min-width: 600px;
-	min-height: 150px;
-	padding: 10px;
-	overflow: auto;
-	text-align: center;
-	background-color: rgb(255, 255, 255);
-	border-radius: 10px;
-	box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
-	transform: translateX(-50%) translateY(-50%);
-	transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 25%;
+  min-width: 600px;
+  min-height: 150px;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.5s;
 }
 
 .mainModalBody:hover {
-	width: 50%;
-	min-width: 720px;
-	height: 80%;
-	background-color: rgba(116, 116, 116, 0.6);
-	transition: 0.5s;
+  width: 50%;
+  min-width: 720px;
+  height: 80%;
+  background-color: rgba(116, 116, 116, 0.6);
+  transition: 0.5s;
 }
 
 .mainModalBody table {
-	width: auto;
-	margin: 10px auto 0 auto;
+  width: auto;
+  margin: 10px auto 0 auto;
 }
 
 .mainModalBody table .modal_img > img {
-	margin-top: 20px;
-	width: 100px;
-	height: 100px;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .subModal {
-	font-family: 'BMDOHYEON';
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.4);
-	transition: all 0.5s;
+  font-family: "BMDOHYEON";
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
 }
 
 .subModalBody {
-	background-color: rgba(179, 171, 171, 0.726);
-	border-radius: 10px;
-	margin: 10% auto;
-	border: 1px solid #888;
-	width: 720px;
+  background-color: rgba(179, 171, 171, 0.726);
+  border-radius: 10px;
+  margin: 10% auto;
+  border: 1px solid #888;
+  width: 720px;
 }
 
 .subModalBody img {
-	width: 720px;
+  width: 720px;
 }
 
 .close_modal {
-	color: #000;
-	float: right;
-	font-size: 32px;
-	font-weight: bold;
+  color: #000;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .close_modal:hover,
 .close_modal:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-section {
-	font-family: 'BMDOHYEON';
-	margin-top: 80px;
-	margin-bottom: 50px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .document_woohyeoung {
-	font-family: 'BMDOHYEON';
-	width: 100%;
-	padding-bottom: 1px;
+  font-family: "BMDOHYEON";
+  width: 100%;
+  padding-bottom: 1px;
 
-	color: #000;
+  color: #000;
 }
 
 .document_item_woohyeoung {
-	width: 700px;
-	padding: 20px 0;
-	height: 50px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #000;
-	border-radius: 10px;
-	position: relative;
+  width: 50%;
+  padding: 20px 0;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: relative;
 }
 
 .document_item_woohyeoung:hover {
-	width: 715px;
-	height: 55px;
-	border: 2px solid #000;
-	transition: 0.2s;
+  width: 52%;
+  height: 55px;
+  border: 2px solid #000;
+  transition: 0.2s;
 
-	background-color: rgb(209, 209, 209);
+  background-color: rgb(209, 209, 209);
 }
 
 .document_item_woohyeoung .title_woohyeoung {
-	font-size: 25px;
-	padding-left: 20px;
-	/* font-weight: bold; */
+  font-size: 25px;
+  padding-left: 20px;
+  /* font-weight: bold; */
 }
 
 .document_item_woohyeoung .tag_woohyeoung {
-	font-size: 20px;
-	top: 20%;
-	right: 10%;
-	position: absolute;
+  font-size: 20px;
+  top: 20%;
+  right: 10%;
+  position: absolute;
 }
 
 .document_item_woohyeoung .content_woohyeoung {
-	font-weight: 900;
-	font-size: 13px;
-	bottom: 10%;
-	right: 1%;
-	position: absolute;
+  font-weight: 900;
+  font-size: 13px;
+  bottom: 10%;
+  right: 1%;
+  position: absolute;
 }
 
 .main_modal_woohyeoung {
-	font-family: 'BMDOHYEON';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: none;
-	background-color: rgba(0, 0, 0, 0.4);
-	z-index: 1;
+  font-family: "BMDOHYEON";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .main_modal_woohyeoung.show {
-	display: block;
+  display: block;
 }
 
 .main_modal_body_woohyeoung {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 80%;
-	height: 70%;
-	overflow-y: none;
-	padding: 20px;
-	text-align: center;
-	background-color: rgb(15, 15, 15, 0.5);
-	border-radius: 10px;
-	box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
-	transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 70%;
+  overflow-y: none;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(15, 15, 15, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .main_modal_body_woohyeoung iframe {
-	font-family: 'BMDOHYEON';
-	width: 75%;
-	height: 100%;
+  font-family: "BMDOHYEON";
+  width: 75%;
+  height: 100%;
 }

@@ -22,7 +22,7 @@ fadeEls.forEach(function (fadeEl, index) {
  * 각자의 사진에 마우스를 올리면?
  * */
 function onMouseOverSang() {
-	$('.sangyoon').attr('src', '../../images/news/sangyoon_r.png');
+	$('.sangyoon').attr('src', '../../images/news/sangyoon_r2.png');
 }
 
 function onMouseOutSang() {
@@ -30,7 +30,7 @@ function onMouseOutSang() {
 }
 
 function onMouseOverWoo() {
-	$('.woohyoung').attr('src', '../../images/news/woohyeoung_r.png');
+	$('.woohyoung').attr('src', '../../images/news/woohyeoung_r2.png');
 }
 
 function onMouseOutWoo() {
@@ -38,7 +38,7 @@ function onMouseOutWoo() {
 }
 
 function onMouseOverHee() {
-	$('.heesoo').attr('src', '../../images/news/heesoo_r.png');
+	$('.heesoo').attr('src', '../../images/news/heesoo_r2.png');
 }
 
 function onMouseOutHee() {
@@ -46,7 +46,7 @@ function onMouseOutHee() {
 }
 
 function onMouseOverJae() {
-	$('.jaebin').attr('src', '../../images/news/jaebin_r.png');
+	$('.jaebin').attr('src', '../../images/news/jaebin_r2.png');
 }
 
 function onMouseOutJae() {

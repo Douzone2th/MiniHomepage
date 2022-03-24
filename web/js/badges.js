@@ -1,9 +1,10 @@
+// 뱃지 클릭시 git 홈페이지
 function onClickBadges_g() {
 	window.open('https://github.com/Douzone2thTeam6/MiniHomepage');
 }
 
 /**
- * 부유하는 요소 관리
+ * 부유하는 요소 관리 (스타벅스 예제 클론코딩)
  */
 // 범위 랜덤 함수(소수점 2자리까지)
 function random(min, max) {
@@ -28,40 +29,3 @@ function floatingObject(selector, delay, size) {
 floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', 0.1, 15);
 floatingObject('.floating3', 1.5, 20);
-
-//스크롤시 헤더 색깔
-$(window).scroll(function () {
-	var windowHeight = document.body.scrollHeight;
-	var scrollBottom = $(document).height() - $(window).height();
-	this.black();
-
-	if (!$(window).scrollTop()) {
-		this.white();
-	} else if (Math.round($(window).scrollTop()) === scrollBottom) {
-		this.white();
-	}
-});
-
-function black() {
-	$('.header').css({
-		color: 'rgb(242, 243, 245)',
-		'background-color': 'black',
-	});
-
-	$('.logo').css('color', 'white');
-	$('.inner').css({
-		color: 'black',
-		'background-color': 'rgb(242, 243, 245)',
-	});
-}
-
-function white() {
-	$('.header').css({
-		color: 'black',
-		'background-color': 'rgb(242, 243, 245)',
-	});
-	$('.logo').css('color', 'black');
-}
-
-// 날씨를 해볼까?
-function onClickBadges_w() {}

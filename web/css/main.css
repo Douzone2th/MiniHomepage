@@ -65,6 +65,7 @@ ul.tech_tab li a.on {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 80px;
 }
 
 #info02 ul.info_list {
@@ -84,10 +85,6 @@ ul.tech_tab li a.on {
 	border-radius: 0 25px 25px 25px;
 	box-sizing: border-box;
 	padding: 10px;
-}
-
-#info02 ul.info_list li:not(:first-child) {
-	margin-top: 20px;
 }
 
 #info02 ul.info_list li:hover {

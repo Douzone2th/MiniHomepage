@@ -10,6 +10,7 @@
   background-color: rgb(242, 243, 245);
 }
 .document_list {
+  font-family: "BMDOHYEON";
   width: 100%;
   padding-bottom: 1px;
 
@@ -53,6 +54,7 @@
   position: absolute;
 }
 .mainModal {
+  font-family: "BMDOHYEON";
   position: absolute;
   top: 0;
   left: 0;
@@ -96,6 +98,7 @@
   height: 100px;
 }
 .subModal {
+  font-family: "BMDOHYEON";
   display: none;
   position: fixed;
   z-index: 1;
@@ -131,11 +134,13 @@
   cursor: pointer;
 }
 section {
+  font-family: "BMDOHYEON";
   margin-top: 80px;
   margin-bottom: 50px;
 }
 
 .document_woohyeoung {
+  font-family: "BMDOHYEON";
   width: 100%;
   padding-bottom: 1px;
 
@@ -184,6 +189,7 @@ section {
   position: absolute;
 }
 .main_modal_woohyeoung {
+  font-family: "BMDOHYEON";
   position: absolute;
   top: 0;
   left: 0;
@@ -211,6 +217,7 @@ section {
   transform: translateX(-50%) translateY(-50%);
 }
 .main_modal_body_woohyeoung iframe {
+  font-family: "BMDOHYEON";
   width: 75%;
   height: 100%;
 }

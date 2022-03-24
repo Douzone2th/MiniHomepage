@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Team4 | mini-homepage-schedule</title>
+    <!--jQuery-->
+    <script type="text/javascript" src="../../js/lib/jQuery.js"></script>
+    <!--    bootstrap-->
+    <link type="text/css" rel="stylesheet" href="../../css/bootstrap_5.1.3.css">
+    <!--    material css-->
+    <link href="../../css/material.css" rel="stylesheet">
+    <!--    material js-->
+    <script defer src="../../js/lib/material.js"></script>
+    <!--    material icon-->
+    <link href="../../css/material-icons.css" rel="stylesheet">
+    <!--    main_heesoo.css-->
+    <link href="../../css/main_heesoo.css" rel="stylesheet">
+    <!--    side_bar.js-->
+    <script defer src="../../js/side_bar.js"></script>
+    <!--    side_bar.css-->
+    <link href="../../css/side_bar.css" rel="stylesheet">
+    <!--    google font do hyeon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+	  <link rel="icon" href="../../favicon.png" />
+    <!--scroll to css && js-->
+    <link href="../../css/scroll_to.css" rel="stylesheet">
+    <script defer src="../../js/scroll_to.js"></script>
+    <style type="text/css">
+        .container_woohyeoung {
+          height: auto; 
+        }
+  
+        .timeline_woohyeoung {
+          margin: 20px auto 0 15%;
+          display: -webkit-flex;
+          width: 85%;
+          height: 130px;
+          white-space: nowrap;
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+        }
+  
+        .timeline_woohyeoung ol {
+          -webkit-flex: 1;
+          flex: 1;
+          font-size: 0;
+          width: 100vw;
+          padding: 0px 250px 0 0;
+          transition: all 1s;
+        }
+  
+        .timeline_woohyeoung ol > li {
+          position: relative;
+          display: inline-block;
+          list-style-type: none;
+          width: 15%;
+          height: 3px;
+          background: #000;
+        }
+  
+        .timeline_woohyeoung ol > li:not(:first-child) {
+          margin-left: 14px;
+        }
+  
+        .timeline_woohyeoung ol > li::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 1px);
+          bottom: 0;
+          width: 20px;
+          height: 20px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          background: #000;
+        }
+        .timeline_woohyeoung ol > li > div {
+          position: absolute;
+          left: calc(100% + 7px);
+          text-align: center;
+          width: 60px;
+          height: 50;
+          border-radius: 10px;
+          padding: 15px;
+          font-size: 1rem;
+          white-space: normal;
+          color: #fff;
+          background: #000;
+          
+        }
+  
+        .timeline_woohyeoung ol > li:hover > div {
+          width: 65px;
+          height: 60px;
+          transition: 0.4s;
+        }
+  
+        .timeline_woohyeoung ol li div::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+        }
+  
+        .timeline_woohyeoung ol li:nth-child(odd) div {
+          top: -15px;
+          transform: translateY(-100%);
+        }
+  
+        .timeline_woohyeoung ol li:nth-child(odd) div::before {
+          top: 90%;
+          border-width: 15px 15px 0 0;
+          border-color: #000 transparent transparent transparent;
+        }
+  
+        .timeline_woohyeoung ol li:nth-child(even) div {
+          top: calc(100% + 20px);
+        }
+  
+        .timeline_woohyeoung ol li:nth-child(even) div::before {
+          top: -8px;
+          border-width: 15px 0 0 15px;
+          border-color: transparent transparent transparent #000;
+        }
+  
+        .schedule_woohyeoung {
+          width: 90%;
+          display: flex;
+        }
+  
+        .schedule_woohyeoung ul {
+          padding-top: 20px;
+          display: none;
+        }
+  
+        .schedule_woohyeoung ul.show {
+          display: block;
+        }
+  
+        .schedule_woohyeoung .list_head_woohyeoung {
+          list-style-type: none;
+          padding-left: 20px;
+          padding-bottom: 50px;
+          font-size: 40px;
+          width: 100px;
+        }
+  
+        .schedule_woohyeoung .list_woohyeoung {
+          text-align: left;
+          padding-bottom: 10px;
+        }
+
+        .schedule .visual {
+          background-position: center;
+        }
+      </style>
+</head>
+
+<body class="body">
+    <!--header-->
+    <header id="header" class="header">
+    </header>
+
+    <!--aside subcategory menu-->
+    <aside class="">
+        <ul class="nav flex-column">
+            <li class="nav-item-title">
+                <h1 class="nav-item-h1">News</h1>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="news-teamNews.html">
+                    <h2 class="nav-item-h2" id="news_woohyeoung">팀 뉴스</h2>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="news-teamSchedule.html">
+                    <h2 class="nav-item-h2" id="schedule_woohyeoung" href="news-teamSchedule.html">팀 일정</h2>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!--container-->
+    <div class="container" style="height: 600px; ">
+        <!--    news-->
+        <section class="schedule">
+            <div class="map-title">
+                <h1 id="kosa-title">팀 뉴스</h1>
+            </div>
+
+            <!--VISUAL-->
+            <section class="visual">
+                <div class="container_woohyeoung">
+                    <article class="timeline_woohyeoung">
+                      <ol>
+                        <li>
+                          <div class="timeline_btn" id="0">1월</div>
+                        </li>
+                        <li>
+                          <div class="timeline_btn" id="1">2월</div>
+                        </li>
+                        <li>
+                          <div class="timeline_btn" id="2">3월</div>
+                        </li>
+                        <li>
+                          <div class="timeline_btn" id="3">4월</div>
+                        </li>
+                        <li>
+                          <div class="timeline_btn" id="4">5월</div>
+                        </li>
+                        <li>
+                          <div class="timeline_btn" id="5">6월</div>
+                        </li>
+                        <li>
+                          <div class="timeline_btn" id="6">7월</div>
+                        </li>
+                      </ol>
+                    </article>
+                    <section class="schedule_woohyeoung">
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">1월</li>
+                        <li class="list_woohyeoung">01/18 (화) : 더존비즈온 채용확정형 2기 SW개발자 양성과정 면접</li>
+                        <li class="list_woohyeoung">01/24 (월) : 오리엔테이션, 팀 결성 (4팀: 이상윤, 5팀 : 윤우형, 6팀 : 정재빈, 김희수)</li>
+                        <li class="list_woohyeoung">항목 3</li>
+                      </ul>
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">2월</li>
+                        <li class="list_woohyeoung">02/08 (화) : UML 팀 발표</li>
+                        <li class="list_woohyeoung">02/15 (화) : DesignPattern 팀 발표</li>
+                        <li class="list_woohyeoung">02/22 (화) :ㅣ DataBase 팀 발표</li>
+                      </ul>
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">3월</li>
+                        <li class="list_woohyeoung">03/02 (수) : 정규표현식 팀 발표</li>
+                        <li class="list_woohyeoung">03/08 (화) : Refactoring 팀 발표</li>
+                        <li class="list_woohyeoung">03/11 (금) : 팀 변경 (4팀 : 정재빈, 이상윤, 윤우형, 김희수)</li>
+                        <li class="list_woohyeoung">03/17 (목) ~ 03/24 (목) : 정적 웹페이지 기획, 제작</li>
+                      </ul>
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">4월</li>
+                        <li class="list_woohyeoung">항목 1</li>
+                        <li class="list_woohyeoung">항목 2</li>
+                        <li class="list_woohyeoung">항목 3</li>
+                      </ul>
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">5월</li>
+                        <li class="list_woohyeoung">항목 1</li>
+                        <li class="list_woohyeoung">항목 2</li>
+                        <li class="list_woohyeoung">항목 3</li>
+                      </ul>
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">6월</li>
+                        <li class="list_woohyeoung">항목 1</li>
+                        <li class="list_woohyeoung">항목 2</li>
+                        <li class="list_woohyeoung">항목 3</li>
+                      </ul>
+                      <ul class="ul_btn">
+                        <li class="list_head_woohyeoung">7월</li>
+                        <li class="list_woohyeoung">항목 1</li>
+                        <li class="list_woohyeoung">항목 2</li>
+                        <li class="list_woohyeoung">07/20 (수) : 교육 종료</li>
+                      </ul>
+                    </section>
+                    <script type="text/javascript">
+                      var month_ul = document.querySelectorAll(".ul_btn");
+                
+                      $(".timeline_btn").click((e) => {
+                        let $target = $(e.target);
+                        let ul_id = $target.attr("id");
+                        $(month_ul[ul_id]).toggle("slow");
+                        $(month_ul).not(month_ul[ul_id]).hide();
+                      });
+                    </script>
+                  </div>
+            </section>
+        </section>
+    
+        <!--    schedule-->
+        <!-- <section class="schedule">
+            <div class="map-title">
+                <h1 id="kosa-title">팀 일정</h1>
+            </div>
+            <iframe id="iframe_schedule" src="news_schedule.html"></iframe>
+        </section> -->
+
+        <!--TO BOTTOM BUTTON-->
+        <div id="to-bottom">
+            <div class="material-icons">arrow_downward</div>
+        </div>
+        <!--TO TOP BUTTON-->
+        <div id="to-top">
+            <div class="material-icons">arrow_upward</div>
+        </div>
+    </div>
+
+
+    
+    
+
+    </div>
+    <!--footer-->
+    <footer id="footer" class="footer" posittion="absolute">
+    </footer>
+
+</body>
+
+</html>
+<!--    news.js-->
+<script defer src="../../js/news/news.js"></script>
+<!--    news.css-->
+<link href="../../css/news/news.css" rel="stylesheet">
+<!--bootstrap-->
+<script type="text/javascript" src="../../js/lib/bootstrap_5.1.3.js"></script>
+<!--GSAP & ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>
+
+<!--    header && footer-->
+<script type="text/javascript" src="/js/header_footer.js"></script>
+<!--ScrollMagic-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="../../js/news/newsMerge.js"></script>

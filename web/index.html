@@ -7,17 +7,9 @@
 	<script src="/js/lib/jQuery.js"></script>
 	<!-- Icon -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-	<!-- Carousel -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-		</script>
 	<!-- Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap" rel="stylesheet">
 	<!--GSAP & ScrollToPlugin-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
 		integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -37,35 +29,6 @@
 	<link rel="stylesheet" href="/css/badges.css" />
 	<!-- badge.js -->
 	<script defer type="text/javascript" src="/js/badges.js"></script>
-
-	<style type="text/css">
-		.carousel-inner {
-			max-width: 50%;
-			margin: auto;
-			width: 80%;
-			overflow: hidden;
-		}
-
-		.carousel-item {
-			height: auto;
-			margin: 10% auto;
-		}
-
-		.d-block {
-			max-width: 100%;
-			display: block;
-			height: auto;
-			left: 20%;
-		}
-
-		.carousel-control-prev-icon {
-			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-		}
-
-		.carousel-control-next-icon {
-			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-		}
-	</style>
 	<script defer type="text/javascript" src="/js/header_footer.js"></script>
 </head>
 
@@ -73,26 +36,6 @@
 
 	<div id="header" class="header"></div>
 
-	<!-- <div class="carousel_position">
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img src="/images/view1.png" class="d-block w-100" alt="...">
-			  </div>
-			  <div class="carousel-item">
-				<img src="/images/douzone2.jpg" class="d-block w-100" alt="...">
-			  </div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Next</span>
-			</button>
-		  </div>
-	</div> -->
 	<div class="slideshow-container">
 
 		<div class="mySlides fade">
@@ -120,7 +63,7 @@
 		<!-- <span class="dot"></span>  -->
 	</div>
 	<br>
-	<hr>
+	<hr style="width : 85%; margin: auto; height: 2px">
 	<br>
 
 
@@ -160,10 +103,6 @@
 		<script src="../../js/team/team_introduction.js" type="text/javascript"></script>
 		<div class="min_cont" id="info02">
 			<ul class="info_list">
-				<!-- <li class="info_li" onclick="/menu/news/news-teamNews.html">밀접접촉자에서 확진자까지..😷</li>
-			<li class="info_li">몸짱은 힘들어🦾</li>
-			<li class="info_li">남쪽나라 사람 서울살이📦</li>
-			<li class="info_li">코로나 완치, But 휴유증😷</li> -->
 				<li class="info_li" onclick="location.href='/menu/news/news-teamNews.html'" style="line-height: 50px;">
 					밀접접촉자에서 확진자까지..😷<br>
 					몸짱은 힘들어🦾<br>
@@ -198,7 +137,7 @@
 <!-- kakao map sdk -->
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dfdeae896e56a03da14a6dd2108b170d&libraries=services,clusterer,drawing">
-	</script>
+</script>
 <!--    location_map-->
 <script type="text/javascript" src="/js/location/location_map.js"></script>
 <!-- scroll header -->

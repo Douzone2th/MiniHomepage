@@ -7,6 +7,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'BMDOHYEON';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 
 	font-family: KoPubDotumMedium;
@@ -63,7 +71,7 @@ ul.tech_tab li a.on {
 
 #info02 ul.info_list {
 	width: 30%;
-	font-family: 'Do Hyeon', sans-serif;
+	font-family: 'BMDOHYEON', sans-serif;
 	font-size: 20px;
 	text-align: center;
 }
@@ -141,7 +149,7 @@ ul.info_list li:hover {
 
 #info01 ul.info_list li.info_li>span {
 	margin-left: 45%;
-	font-family: 'Do Hyeon', sans-serif;
+	font-family: 'BMDOHYEON', sans-serif;
 	font-size: 20px;
 }
 
@@ -158,10 +166,8 @@ ul.info_list li:hover {
 
 }
 
-
 /* Slideshow container */
 .slideshow-container {
-	/* max-height: 400px; */
 	position: relative;
 	margin-left: 28%;
 }
@@ -178,7 +184,9 @@ ul.info_list li:hover {
 	transition: background-color 0.6s ease;
 }
 
-
+.active, .dot:hover {
+	background-color: #717171;
+  }
 
 /* Fading animation */
 .fade {

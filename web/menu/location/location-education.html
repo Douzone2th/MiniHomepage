@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Team4 | mini-homepage-location</title>
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <!--    bootstrap-->
     <link type="text/css" rel="stylesheet" href="../../css/bootstrap_5.1.3.css">
     <!--    material css-->
@@ -38,20 +40,29 @@
     </header>
 
     <!--aside subcategory menu-->
-    <aside class="aside-bar">
-        <ul class="nav flex-column">
-            <li class="nav-item-title">
-                <h1 class="nav-item-h1">Location</h1>
+    <aside id="aside-bar">
+        <ul id="aside-bar-ul" class="nav flex-column">
+            <li class="nav-item nav-item-title">
+                <div class="nav-item-h1">Location</div>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="location-education.html">
-                    <h2 class="nav-item-h2">교육
-                        장소</h2>
+                    <div class="nav-item-h2">
+                        <div>교육장소</div>
+                        <span class="material-icons" style="color: white;">
+                            navigate_next
+                        </span>
+                    </div>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="location-food.html">
-                    <h2 class="nav-item-h2">맛집 장소</h2>
+                    <div class="nav-item-h2">
+                        <div>맛집 장소</div>
+                        <span class="material-icons" style="color: white;">
+                            navigate_next
+                        </span>
+                    </div>
                 </a>
             </li>
         </ul>

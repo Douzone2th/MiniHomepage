@@ -16,89 +16,85 @@
 
 /*sidebar*/
 /*사이드바*/
-.aside-bar {
+#aside-bar {
 	font-family: 'BMDOHYEON';
-	width: 10%;
-	position: fixed;
+	width: 200px;
 	height: 150px;
+	position: fixed;
 	margin: 50px 0px 50px 30px;
 	grid-area: sidebar;
-	border-radius: 10px;
-	border: 0px solid #d9d9d9;
 }
 
-aside ul {
+#aside-bar-ul {
 	width: 100%;
-	height: 150px;
-	border-radius: 10px;
+	height: 100%;
 }
 
-aside ul li a {
-	width: 100%;
-	border-radius: 10px;
-	border: 1px solid #0097ec;
-	font-family: 'BMDOHYEON';
-	text-decoration: none;
-}
-
-aside ul li .nav-item-h1 {
+#aside-bar #aside-bar-ul .nav-item .nav-item-h1 {
 	height: 50px;
 	align-items: center;
-	justify-items: center;
+	justify-content: center;
+	font-family: 'BMDOHYEON';
 }
 
-.nav-item {
+#aside-bar #aside-bar-ul .nav-item {
 	width: 100%;
-	height: 50px;
+	height: 33%;
 	border-radius: 10px;
 	border: 2px solid #0097ec;
 
+	text-align: center;
 	display: flex;
 	align-items: center;
-	justify-items: center;
-	flex-direction: column;
+	justify-content: center;
 
+	text-decoration: none;
+	font-family: 'BMDOHYEON';
+}
+
+#aside-bar #aside-bar-ul .nav-item:hover {
+	width: 110%;
+	font-family: 'BMDOHYEON';
 	text-decoration: none;
 }
 
-.nav-item:hover {
-	width: 110%;
+#aside-bar #aside-bar-ul .nav-item.nav-item-title {
+	background-color: white;
+	border: 0px solid #0097ec;
 }
 
-.nav-item-title {
-	width: 100%;
-	height: 50px;
-
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	flex-direction: column;
-}
-
-.nav-item .nav-link {
+#aside-bar #aside-bar-ul .nav-item .nav-link {
 	color: black;
-	height: 50px;
-}
-
-.nav-item .nav-item-h1 {
-	font-size: 20px;
-	display: flex;
-	align-items: center;
-	justify-items: center;
-}
-
-.nav-item .nav-item-h2 {
-	font-size: 15px;
-	display: flex;
-	align-items: center;
-	justify-items: center;
-}
-
-li.nav-item .nav-link.active {
-	color: cornsilk;
-	background-color: dodgerblue;
+	width: 100%;
+	height: 100%;
+	font-family: 'BMDOHYEON';
+	text-decoration: none;
 	display: flex;
 	flex-direction: row;
+	text-align: center;
 	align-items: center;
-	justify-items: center;
+	justify-content: center;
+}
+
+#aside-bar #aside-bar-ul .nav-item .nav-item-h1 {
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'BMDOHYEON';
+	text-decoration: none;
+}
+
+#aside-bar #aside-bar-ul .nav-item .nav-item-h2 {
+	font-size: 20px;
+	font-family: 'BMDOHYEON';
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+#aside-bar #aside-bar-ul .nav-item .nav-link.active {
+	color: cornsilk;
+	background-color: dodgerblue;
 }

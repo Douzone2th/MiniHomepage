@@ -4,35 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Team4 | mini-homepage-news</title>
-    <!--    bootstrap-->
-    <link type="text/css" rel="stylesheet" href="../../css/bootstrap_5.1.3.css">
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.png" />
+
+    <!--jQuery-->
+    <script type="text/javascript" src="../../js/lib/jQuery.js"></script>
+
+    <!--bootstrap-->
+    <script type="text/javascript" src="../../js/lib/bootstrap_5.1.3.js"></script>
+
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+        integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+        crossorigin="anonymous"></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
     <!--    material css-->
     <link href="../../css/material.css" rel="stylesheet">
     <!--    material js-->
     <script defer src="../../js/lib/material.js"></script>
     <!--    material icon-->
     <link href="../../css/material-icons.css" rel="stylesheet">
-    <!--    main_heesoo.css-->
-    <link href="../../css/main_heesoo.css" rel="stylesheet">
-    <!--    side_bar.js-->
-    <script defer src="../../js/side_bar.js"></script>
-    <!--    side_bar.css-->
-    <link href="../../css/side_bar.css" rel="stylesheet">
+
     <!--    google font do hyeon-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;700&display=swap"
         rel="stylesheet">
-    <!--scroll to css && js-->
-    <link href="../../css/scroll_to.css" rel="stylesheet">
-    <script defer src="../../js/scroll_to.js"></script>
-    <!-- Favicon -->
-    <link rel="icon" href="../../favicon.png" />
 
     <!--    &lt;!&ndash;schedule.js&ndash;&gt;-->
     <!--    <script defer src="../../js/news/schedule.js"></script>-->
     <!-- Favicon -->
-	<link rel="icon" href="../../favicon.png" />
+    <link rel="icon" href="../../favicon.png" />
 </head>
 
 <body class="body">
@@ -41,19 +51,33 @@
     </header>
 
     <!--aside subcategory menu-->
-    <aside class="">
-        <ul class="nav flex-column">
-            <li class="nav-item-title">
-                <h1 class="nav-item-h1">News</h1>
+    <aside id="aside-bar">
+        <ul id="aside-bar-ul" class="nav flex-column">
+            <li class="nav-item nav-item-title">
+                <div class="nav-item-h1">News</div>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="news-teamNews.html">
-                    <h2 class="nav-item-h2" id="news_woohyeoung" href="news-teamNews.html">팀 뉴스</h2>
+                    <div class="nav-item-h2" id="news_woohyeoung" href="news-teamNews.html">
+                        <div>
+                            팀 뉴스
+                        </div>
+                        <span class="material-icons" style="color: white;">
+                            navigate_next
+                        </span>
+                    </div>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="news-teamSchedule.html">
-                    <h2 class="nav-item-h2" id="schedule_woohyeoung" href="news-teamSchedule.html">팀 일정</h2>
+                    <div class="nav-item-h2" id="schedule_woohyeoung" href="news-teamSchedule.html">
+                        <div>
+                            팀 일정
+                        </div>
+                        <span class="material-icons" style="color: white;">
+                            navigate_next
+                        </span>
+                    </div>
                 </a>
             </li>
         </ul>
@@ -67,7 +91,7 @@
                 <h1 id="kosa-title">팀 뉴스</h1>
             </div>
 
-            <section class="visual team-news-background">
+            <section class=" visual team-news-background">
                 <div class="inner-news">
                     <!-- <div class="title fade-in">
                     </div> -->
@@ -117,7 +141,7 @@
                     양성이 떠서 코로나 확진자가 되었습니다.
                 </pre>
                     <p> 다행히도 증상이 없어서 아프지는 않았다는 소식.
-                        <h3>코로나 조심하세유!</h3>
+                    <h3>코로나 조심하세유!</h3>
                     </p>
                 </div>
             </div>
@@ -171,24 +195,23 @@
 </body>
 
 </html>
+<!--    header && footer-->
+<script type="text/javascript" src="/js/header_footer.js"></script>
 <!--    news.js-->
 <script defer src="../../js/news/news.js"></script>
 <!--    news.css-->
 <link href="../../css/news/news.css" rel="stylesheet">
-<!--bootstrap-->
-<script type="text/javascript" src="../../js/lib/bootstrap_5.1.3.js"></script>
-<!--GSAP & ScrollToPlugin-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
-    crossorigin="anonymous"></script>
-<!--jQuery-->
-<script type="text/javascript" src="../../js/lib/jQuery.js"></script>
-<!--    header && footer-->
-<script type="text/javascript" src="/js/header_footer.js"></script>
-<!--ScrollMagic-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+<script src="../../js/news/newsMerge.js"></script>
 <!-- scroll header -->
 <script type="text/javascript" src="/js/scroll_header.js"></script>
+
+<!--    main_heesoo.css-->
+<link href="../../css/main_heesoo.css" rel="stylesheet">
+<!--    side_bar.js-->
+<script defer src="../../js/side_bar.js"></script>
+<!--    side_bar.css-->
+<link href="../../css/side_bar.css" rel="stylesheet">
+<!--scroll to css && js-->
+<link href="../../css/scroll_to.css" rel="stylesheet">
+<script defer src="../../js/scroll_to.js"></script>

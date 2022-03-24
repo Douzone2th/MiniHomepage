@@ -6,7 +6,6 @@ let windowOuterHeight = 0;
 /**
  * 순서대로 나타나는 기능
  */
-console.log(1123);
 // 나타날 요소들(.fade-in) 찾기.
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 // 나타날 요소들을 하나씩 반복해서 처리!
@@ -82,7 +81,7 @@ function onMouseClick(index) {
 		main.toggle('show');
 		if (index == 0) {
 			jaebin.classList.toggle('show');
-			console.log($(arrClassName[index]).css('display'));
+
 			if ($(arrIdName[index]).css('display') == 'none') {
 				$('#jaebin-news').css('display', 'block');
 			} else {

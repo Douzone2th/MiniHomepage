@@ -5,6 +5,14 @@
   font-style: normal;
 }
 
+
+.show-one{
+  display: none;
+}
+.show-one.show{
+  display: block;
+}
+
 .title {
   text-align: center;
   margin-top: 100px;
@@ -16,6 +24,8 @@
   justify-content: center;
   align-items: flex-start;
   font-family: "BMDOHYEON";
+  
+
 }
 
 
@@ -32,7 +42,7 @@
 
 hr.one {
   width: 1000px;
-  margin: auto;
+  margin : 0 auto;
 }
 
 .about__mini ul {
@@ -57,22 +67,29 @@ svg {
 }
 
 .about__section {
-  width: 1121px;
-  margin: auto;
+  width: 1250px;
+  margin-left: 20%;
   text-align: center;
 }
-
-
+.about__section .t_i{
+  width: 1250px;
+}
 .about__section_poem {
   width: 960px;
   margin: auto;
   text-align: center;
   background-color: rgb(243, 240, 240);
 }
-
-.wooh{
-  position: absolute;
-
+.about__section ul>li{
+  min-width: 400px;
+}
+.about__section ul{
+  
+  padding: 0;
+}
+.about__section ul>li .about__slot{
+  width: 100%;
+  left:5%;
 }
 
 
@@ -98,10 +115,6 @@ svg {
   overflow: hidden;
 }
 
-.about__section .about__slot .jaebin-123{
-  z-index: 10;
-}
-
 .about__slot .bioText {
   opacity: 0;
   color: rgba(242, 242, 242, 0);
@@ -111,7 +124,6 @@ svg {
   left: 0;
   right: 0;
   padding: 10%;
-  ;
   padding-top: 25px;
   padding-bottom: 25px;
   width: 80%;

@@ -1,77 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team introduction</title>
-    <script src="../../js/team/team_introduction.js" type="text/javascript"></script>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team4 | mini-homepage-introduce</title>
+  <script src="../../js/team/team_introduction.js" type="text/javascript"></script>
+  <script src="../../js/team/jquery-3.6.0.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../../css/main_heesoo.css" type="text/css">
+  <link rel="stylesheet" href="../../css/team/team_introduction.css" type="text/css">
+  <link rel="stylesheet" href="../../css/team/team_introduction_2.css" type="text/css">
+  <link rel="icon" href="/images/zooMonkey.png" />
+
+  <!--    material css-->
+  <link href="../../css/material.css" rel="stylesheet">
+  <!--    material js-->
+  <script defer src="../../js/lib/material.js"></script>
+  <!--    material icon-->
+  <link href="../../css/material-icons.css" rel="stylesheet">
+  <!--    side_bar.js-->
+  <script defer src="../../js/side_bar.js"></script>
+  <!--    side_bar.css-->
+  <link href="../../css/side_bar.css" rel="stylesheet">
+  <!--scroll to css && js-->
+  <link href="../../css/scroll_to.css" rel="stylesheet">
+  <script defer src="../../js/scroll_to.js"></script>
+
+  <!-- scroll header -->
+  <script type="text/javascript" src="/js/scroll_header.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.png" />
 </head>
 
-<link rel = "stylesheet" href="../../css/team/team_introduction.css" type="text/css">
+
+
 <body>
-
-<div>
-    <h2 class="title">TEAM INTRODUCTION</h2>
-    <p class="sub-heading">Douzone 2th 4-Team<br />
-      Meet our Team
-    </p>
-</div>
-<div class="about__section">
-  <a href="javascript:void(0);" title="Jung JaeBin">
-    <div class="about__slot bio">
-    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../images/myphoto.jpg');"></div>
-    <div class="about__info">
-    <h4 class="name">Jung JaeBin</h4>
-    <h5 class="title">Full-Stack Developer</h5>
+  <!--header-->
+  <header id="header" class="header">
+  </header>
+  <!--aside subcategory menu-->
+  <aside class="">
+    <ul class="nav flex-column">
+        <li class="nav-item-title">
+            <h1 class="nav-item-h1">Location</h1>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="location-education.html">
+                <h2 class="nav-item-h2">교육
+                    장소</h2>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="location-food.html">
+                <h2 class="nav-item-h2">맛집 장소</h2>
+            </a>
+        </li>
+    </ul>
+  </aside>
+  <!--container-->
+  
+  <div class="title">
+    <h2>TEAM INTRODUCTION</h2>
+    <div class="sub-heading">
+      <img src="../../images/zoo.png" width="32" height="32">
+      <div>&nbsp;Douzone Zoo&nbsp;</div>
+      <img src="../../images/zoo.png" width="32" height="32">
     </div>
-    <div class="bioText">I am a full stack developer, graphic designer, 3D artist, animator, and entrepreneur.<br /><br /></div>
-    </div></a>
+  </div>
+  <div class="about__section">
+    <a href="javascript:void(0);" title="Jung JaeBin">
+      <div class="about__slot">
+        <div class="headshot" onclick="biograph(this.parentNode);"
+          style="background-image:url('../../images/jaebin.jpg');"></div>
+        <div class="about__info">
+          <h4 class="name">Jung JaeBin</h4>
+          <h5 class="title">ZooKeeper&nbsp;<img src="../../images/재빈.png" width="20" height="20"></h5>
+        </div>
+        <div class="bioText">안녕 난 더존 동물원 사육사 <br />정재빈<br /><br />https://img.shields.io/badge/style-plastic-red?style=plastic</div>
+      </div>
+    </a>
+    <br />
+    <a href="javascript:void(0);" title="Lee Sangyoon">
+      <div class="about__slot">
+        <div class="headshot" onclick="biograph(this.parentNode);"
+          style="background-image:url('../../images/sagnyoon.jpg');"></div>
+        <div class="about__info">
+          <h4 class="name">Lee Sangyoon</h4>
+          <h5 class="title">Monkey&nbsp;<img src="../../images/상윤.png" width="20" height="20"></h5>
+        </div>
+        <div class="bioText">안녕 난 더존 동물원 첫번째 원숭이 <br />이상윤<br><br></div>
+      </div>
+    </a>
 
-  <a href="javascript:void(0);" title="Lee Sangyoon">
-    <div class="about__slot">
-    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../images/sagnyoon.jpg');"></div>
-    <div class="about__info">
-    <h4 class="name">Lee Sangyoon</h4>
-    <h5 class="title">Full-Stack Developer</h5>
-    </div>
-    <div class="bioText">Austin Meowers is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
-    </div></a>
+    <a href="javascript:void(0);" title="Yoon Woohyung">
+      <div class="about__slot">
+        <div class="headshot" onclick="biograph(this.parentNode);"
+          style="background-image:url('../../images/woohyung.jpg');"></div>
+        <div class="about__info">
+          <h4 class="name">Yoon Woohyeoung</h4>
+          <h5 class="title">Wicked Fox&nbsp;<img src="../../images/우형.png" width="20" height="20"></h5>
+        </div>
+        <div class="bioText">안녕 난 앙큼 여우 <br>윤우형</div>
+      </div>
+    </a>
 
-  <a href="javascript:void(0);" title="Yoon Woohyung">
-    <div class="about__slot">
-    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('../images/woohyung.jpg');"></div>
-    <div class="about__info">
-    <h4 class="name">Yoon Woohyung</h4>
-    <h5 class="title">Full-Stack Developer</h5>
-    </div>
-    <div class="bioText">Mr Whiskers is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>
-    </div></a>
-    
-  <a href="javascript:void(0);" title="Kim Heesoo"><div class="about__slot">
-    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('../images/heesoo.jpg');"></div>
-    <div class="about__info">
-    <h4 class="name">Kim Heesoo</h4>
-    <h5 class="title">Full-Stack Developer</h5>
-    </div>
-    <div class="bioText">Boopafina is a lorem ipsum dalor set amet consectur adipscing.<br><br>f g+ tw li</div>    
-    </div></a>    
-    </div>
-<br /><br /><br />
-<hr class="one">
-<div class="about__mini">
-  <h2 class="title">About Mini Project</h2>
-  <ul>
-    <li><strong>내용</strong>: 정적 웹페이지 자율 프로젝트</li>
-    <li><strong>기간</strong>: 2022.03.21 ~ 2022.03.22</li>
-    <li><strong>주제</strong>: 팀 소개 페이지</li>
-    <li><strong>역할 분담</strong></li>
-      <ul><li><strong>정재빈</strong></li></ul>
+    <a href="javascript:void(0);" title="Kim Heesoo">
+      <div class="about__slot">
+        <div class="headshot" onclick="biograph(this.parentNode);"
+          style="background-image:url('../../images/heesoo.jpg');"></div>
+        <div class="about__info">
+          <h4 class="name">Kim Heesoo</h4>
+          <h5 class="title">Monkey&nbsp;<img src="../../images/히수.png" width="20" height="20"></h5>
+        </div>
+        <div class="bioText">안녕 난 더존 동물원 두번째 원숭이 <br />김히수<br><br>
+          <!--여기에 페북이나 -->
+        </div>
+      </div>
+    </a>
+  </div>
+  <br /><br /><br /><br /><br /><br />
+  <hr class="one">
+  <div class="title">
+    <h2>ABOUT MINI PROJECT</h2>
+  </div>
+  <div class="about__section">
+    <article>
+      <ul>
+        <li class="icon1">
+          <span>a</span>
+          <!-- tooltip pure css3 -->
+          <label><strong>기간 : </strong>2022.03.21 ~ 2022.03.22</label>
+        </li>
+        <li class="icon2">
+          <span>b</span>
+          <!-- tooltip pure css3 -->
+          <label><strong>내용 : </strong><br />정적 웹페이지 자율 주제 <br> 프로젝트</label>
+        </li>
+        <li class="icon3">
+          <span>c</span>
+          <!-- tooltip pure css3 -->
+          <label><strong>역할 분담</strong>
+            <div class="flex-container">
+              <div class="flex-item"><strong style="font-size: medium;">정재빈</strong><br /> 교육 장소 <br /> 맛집 장소 <br /> 팀뉴스
+              </div>
+              <div class="flex-item"><strong style="font-size: medium;">이상윤</strong><br /> 팀 소개 <br /> 발자취 </div>
+              <div class="flex-item"><strong style="font-size: medium;">윤우형</strong><br /> 알고리즘 스터디 <br /> 팀 과제 <br /> 팀
+                일정 </div>
+              <div class="flex-item"><strong style="font-size: medium;">김희수</strong><br /> 전체 틀 <br /> 메인 페이지 </div>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </article>
+  </div>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <hr class="one">
 
-  </ul>
-  </p>
+  <div class="title">
+    <h2>TEAM VISION</h2>
+  </div>
 
-</div>
+  <div class="about__section_poem">
+    <a href="https://twitter.com/type4graphic/status/623133618953519105" target="_blank"><img
+        src="../../images/poem.png" class="Team_Vision"></a>
+
+  </div>
+  <br /><br /><br />
+  <!--TO BOTTOM BUTTON-->
+  <div id="to-bottom">
+    <div class="material-icons">arrow_downward</div>
+  </div>
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+      <div class="material-icons">arrow_upward</div>
+  </div>
+  <!--footer-->
+  <footer id="footer" class="footer">
+  </footer>
 </body>
+
 </html>
+<!--    header && footer-->
+<script type="text/javascript" src="../../js/header_footer.js"></script>
+
+<!--GSAP & ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>

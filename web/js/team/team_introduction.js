@@ -1,8 +1,7 @@
 function biograph(e) {
-	if(e.className == 'about__slot') {
+	if (e.className == 'about__slot') {
 		e.className = 'about__slot bio';
-	}
-	else {
+	} else {
 		e.className = 'about__slot';
 	}
 }

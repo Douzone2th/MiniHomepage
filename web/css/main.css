@@ -1,217 +1,226 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family: 'KoPubDotumMedium';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "KoPubDotumMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'BMDOHYEON';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff')
-		format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-
-	font-family: KoPubDotumMedium;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  font-family: KoPubDotumMedium;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .tech_wrap {
-	white-space: nowrap;
-	overflow-x: auto;
-	width: 100%;
-	position: relative;
-	margin: 30px 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
 }
 
 ul.tech_tab {
-	text-align: center;
-	z-index: 1;
-	position: relative;
+  text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
 ul.tech_tab li {
-	display: inline-block;
-	text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 ul.tech_tab li a {
-	display: inline-block;
-	font: 400 21px/30px "Open Sans", "Noto Sans KR", sans-serif;
-	color: #666;
-	position: relative;
-	transition: all 0.3s;
-	padding: 9px 15px;
-	border-radius: 0 15px 15px 15px;
-	text-decoration: none;
+  display: inline-block;
+  font: 400 21px/30px "Open Sans", "Noto Sans KR", sans-serif;
+  color: #666;
+  position: relative;
+  transition: all 0.3s;
+  padding: 9px 15px;
+  border-radius: 0 15px 15px 15px;
+  text-decoration: none;
 }
 
 ul.tech_tab li a.on {
-	display: inline-block;
-	font: 400 21px/30px 'Noto Sans KR', sans-serif;
-	color: #fff;
-	background: rgb(127, 127, 127);
-	transition: all 0.2s;
+  display: inline-block;
+  font: 400 21px/30px "Noto Sans KR", sans-serif;
+  color: #fff;
+  background: rgb(127, 127, 127);
+  transition: all 0.2s;
 }
 
 .main_info .min_cont {
-	height: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #info02 ul.info_list {
-	width: 30%;
-	font-family: 'BMDOHYEON', sans-serif;
-	font-size: 20px;
-	text-align: center;
+  width: 30%;
+  font-family: "BMDOHYEON", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 #info02 ul.info_list li {
-	list-style: none;
-	position: relative;
-	height: auto;
-	background: #fff;
-	border: solid 1px #ddd;
-	width: 100%;
-	border-radius: 0 25px 25px 25px;
-	box-sizing: border-box;
-	padding: 10px;
+  list-style: none;
+  position: relative;
+  height: auto;
+  background: #fff;
+  border: solid 1px #ddd;
+  width: 100%;
+  border-radius: 0 25px 25px 25px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 #info02 ul.info_list li:not(:first-child) {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 #info02 ul.info_list li:hover {
-	transition: all 0.3s;
-	cursor: pointer;
-	border: 1px solid transparent;
-	background-image: linear-gradient(#fff, #fff),
-		linear-gradient(to right, #c8aae6, #99b2e5, #7fb7e5);
-	/* 그라데이션 */
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	border-radius: 0 25px 25px 25px;
-	box-shadow: 9px 10px 23px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #c8aae6, #99b2e5, #7fb7e5);
+  /* 그라데이션 */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 0 25px 25px 25px;
+  box-shadow: 9px 10px 23px 5px rgba(0, 0, 0, 0.2);
 }
 
 ul.info_list li {
-	list-style: none;
-	position: relative;
-	height: auto;
-	float: left;
-	background: #fff;
-	border: solid 1px #ddd;
-	width: auto;
-	border-radius: 0 25px 25px 25px;
-	box-sizing: border-box;
-	padding: 10px;
+  list-style: none;
+  position: relative;
+  height: auto;
+  float: left;
+  background: #fff;
+  border: solid 1px #ddd;
+  width: auto;
+  border-radius: 0 25px 25px 25px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 ul.info_list li:hover {
-	transition: all 0.3s;
-	cursor: pointer;
-	border: 1px solid transparent;
-	background-image: linear-gradient(#fff, #fff),
-		linear-gradient(to right, #c8aae6, #99b2e5, #7fb7e5);
-	/* 그라데이션 */
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	border-radius: 0 25px 25px 25px;
-	box-shadow: 9px 10px 23px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #c8aae6, #99b2e5, #7fb7e5);
+  /* 그라데이션 */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 0 25px 25px 25px;
+  box-shadow: 9px 10px 23px 5px rgba(0, 0, 0, 0.2);
 }
 
 #info01 ul.info_list li {
-	height: 300px;
-	width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
 #info01 ul.info_list li {
-	margin-right: 23px;
+  margin-right: 23px;
 }
 
-
-#info01 ul.info_list li.info_li>img {
-	width: 250px;
-	height: auto;
-	margin-left: 10%;
+#info01 ul.info_list li.info_li > img {
+  width: 250px;
+  height: auto;
+  margin-left: 10%;
 }
 
-#info01 ul.info_list li.info_li>span {
-	margin-left: 45%;
-	font-family: 'BMDOHYEON', sans-serif;
-	font-size: 20px;
+#info01 ul.info_list li.info_li > span {
+  margin-left: 45%;
+  font-family: "BMDOHYEON", sans-serif;
+  font-size: 20px;
 }
 
 .mySlides {
-	display: none;
-	margin-top: 10%;
-
+  display: none;
+  margin-top: 10%;
 }
 
-.mySlides>img {
-	vertical-align: middle;
-	width: 60%;
-	height: 500px;
-
+.mySlides > img {
+  vertical-align: middle;
+  width: 60%;
+  height: 500px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-	position: relative;
-	margin-left: 28%;
+  max-height: 400px;
+  position: relative;
+  margin-left: 35%;
 }
-
 
 /* The dots/bullets/indicators */
 .dot {
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-	background-color: #717171;
-  }
+.active,
+.dot:hover {
+  background-color: #717171;
+}
 
 /* Fading animation */
 .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 3s;
-	animation-name: fade;
-	animation-duration: 3s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
-	from {
-		opacity: .4
-	}
-
-	to {
-		opacity: 1
-	}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-	from {
-		opacity: .4
-	}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slogan {
+  bottom: -15%;
+  left: -23%;
+  position: absolute;
+  font-size: 30px;
+}
 
-	to {
-		opacity: 1
-	}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
 }

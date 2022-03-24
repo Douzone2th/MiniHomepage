@@ -12,8 +12,25 @@
   <link rel="stylesheet" href="../../css/team/team_introduction.css" type="text/css">
   <link rel="stylesheet" href="../../css/team/team_introduction_2.css" type="text/css">
   <link rel="icon" href="/images/zooMonkey.png" />
+
+  <!--    material css-->
+  <link href="../../css/material.css" rel="stylesheet">
+  <!--    material js-->
+  <script defer src="../../js/lib/material.js"></script>
+  <!--    material icon-->
+  <link href="../../css/material-icons.css" rel="stylesheet">
+  <!--    side_bar.js-->
+  <script defer src="../../js/side_bar.js"></script>
+  <!--    side_bar.css-->
+  <link href="../../css/side_bar.css" rel="stylesheet">
+  <!--scroll to css && js-->
+  <link href="../../css/scroll_to.css" rel="stylesheet">
+  <script defer src="../../js/scroll_to.js"></script>
+
   <!-- scroll header -->
   <script type="text/javascript" src="/js/scroll_header.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.png" />
 </head>
 
 
@@ -22,7 +39,27 @@
   <!--header-->
   <header id="header" class="header">
   </header>
+  <!--aside subcategory menu-->
+  <aside class="">
+    <ul class="nav flex-column">
+        <li class="nav-item-title">
+            <h1 class="nav-item-h1">Location</h1>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="location-education.html">
+                <h2 class="nav-item-h2">교육
+                    장소</h2>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="location-food.html">
+                <h2 class="nav-item-h2">맛집 장소</h2>
+            </a>
+        </li>
+    </ul>
+  </aside>
   <!--container-->
+  
   <div class="title">
     <h2>TEAM INTRODUCTION</h2>
     <div class="sub-heading">
@@ -40,7 +77,7 @@
           <h4 class="name">Jung JaeBin</h4>
           <h5 class="title">ZooKeeper&nbsp;<img src="../../images/재빈.png" width="20" height="20"></h5>
         </div>
-        <div class="bioText">안녕 난 더존 동물원 사육사 <br />정재빈<br /><br /></div>
+        <div class="bioText">안녕 난 더존 동물원 사육사 <br />정재빈<br /><br />https://img.shields.io/badge/style-plastic-red?style=plastic</div>
       </div>
     </a>
     <br />
@@ -130,7 +167,14 @@
 
   </div>
   <br /><br /><br />
-
+  <!--TO BOTTOM BUTTON-->
+  <div id="to-bottom">
+    <div class="material-icons">arrow_downward</div>
+  </div>
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+      <div class="material-icons">arrow_upward</div>
+  </div>
   <!--footer-->
   <footer id="footer" class="footer">
   </footer>
@@ -139,3 +183,11 @@
 </html>
 <!--    header && footer-->
 <script type="text/javascript" src="../../js/header_footer.js"></script>
+
+<!--GSAP & ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>

@@ -1,7 +1,15 @@
 /*sidebar*/
 /*사이드바*/
+@font-face {
+	font-family: "BMDOHYEON";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+	  format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+
 aside {
-	font-family: '배달의민족 도현';
+	font-family: 'BMDOHYEON';
 	width: 10%;
 	position: fixed;
 	height: 150px;
@@ -21,7 +29,7 @@ aside ul li a {
 	width: 100%;
 	border-radius: 10px;
 	border: 1px solid #0097ec;
-	font-family: '배달의민족 도현';
+	font-family: 'BMDOHYEON';
 	text-decoration: none;
 }
 

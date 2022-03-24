@@ -158,6 +158,7 @@
         .schedule_woohyeoung .list_woohyeoung {
           text-align: left;
           padding-bottom: 10px;
+          min-width: 800px;
         }
 
         .schedule .visual {
@@ -195,7 +196,7 @@
         <!--    news-->
         <section class="schedule">
             <div class="map-title">
-                <h1 id="kosa-title">팀 뉴스</h1>
+                <h1 id="kosa-title">팀 일정</h1>
             </div>
 
             <!--VISUAL-->
@@ -231,13 +232,13 @@
                         <li class="list_head_woohyeoung">1월</li>
                         <li class="list_woohyeoung">01/18 (화) : 더존비즈온 채용확정형 2기 SW개발자 양성과정 면접</li>
                         <li class="list_woohyeoung">01/24 (월) : 오리엔테이션, 팀 결성 (4팀: 이상윤, 5팀 : 윤우형, 6팀 : 정재빈, 김희수)</li>
-                        <li class="list_woohyeoung">항목 3</li>
+                        <li class="list_woohyeoung">01/29 (토) : 정재빈 탄생일🎉</li>
                       </ul>
                       <ul class="ul_btn">
                         <li class="list_head_woohyeoung">2월</li>
                         <li class="list_woohyeoung">02/08 (화) : UML 팀 발표</li>
                         <li class="list_woohyeoung">02/15 (화) : DesignPattern 팀 발표</li>
-                        <li class="list_woohyeoung">02/22 (화) :ㅣ DataBase 팀 발표</li>
+                        <li class="list_woohyeoung">02/22 (화) : DataBase 팀 발표</li>
                       </ul>
                       <ul class="ul_btn">
                         <li class="list_head_woohyeoung">3월</li>
@@ -248,14 +249,14 @@
                       </ul>
                       <ul class="ul_btn">
                         <li class="list_head_woohyeoung">4월</li>
-                        <li class="list_woohyeoung">항목 1</li>
-                        <li class="list_woohyeoung">항목 2</li>
+                        <li class="list_woohyeoung">04/01 (금) ~ : 정보처리기사 실기 스터디 시작 (윤우형, 이상윤, 김희수)</li>
+                        <li class="list_woohyeoung">04/16 (토) ~ : 윤우형 본가(제주도✈) 방문(예정)</li>
                         <li class="list_woohyeoung">항목 3</li>
                       </ul>
                       <ul class="ul_btn">
                         <li class="list_head_woohyeoung">5월</li>
-                        <li class="list_woohyeoung">항목 1</li>
-                        <li class="list_woohyeoung">항목 2</li>
+                        <li class="list_woohyeoung">05/07 (토) : 정보처리기사 실기 시험일</li>
+                        <li class="list_woohyeoung">05/20 (금) : 이상윤 탄생일🎉</li>
                         <li class="list_woohyeoung">항목 3</li>
                       </ul>
                       <ul class="ul_btn">
@@ -266,9 +267,8 @@
                       </ul>
                       <ul class="ul_btn">
                         <li class="list_head_woohyeoung">7월</li>
-                        <li class="list_woohyeoung">항목 1</li>
-                        <li class="list_woohyeoung">항목 2</li>
-                        <li class="list_woohyeoung">07/20 (수) : 교육 종료</li>
+                        <li class="list_woohyeoung">Final Project(예정)</li>
+                        <li class="list_woohyeoung">07/20 (수) : 교육 종료, 회식</li>
                       </ul>
                     </section>
                     <script type="text/javascript">
@@ -277,7 +277,7 @@
                       $(".timeline_btn").click((e) => {
                         let $target = $(e.target);
                         let ul_id = $target.attr("id");
-                        $(month_ul[ul_id]).toggle("slow");
+                        $(month_ul[ul_id]).toggle("600");
                         $(month_ul).not(month_ul[ul_id]).hide();
                       });
                     </script>

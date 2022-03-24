@@ -77,14 +77,14 @@ footer {
 
 /* news team-news */
 /*VISUAL*/
-.news .visual {
+.visual.team-news-background{
   /*margin-top: 120px;*/
   background-image: url("../../images/view1.png");
   background-position: center;
 }
 
-.visual .inner {
-  height: 800px;
+.visual .inner-news {
+  height: 700px;
 }
 
 .visual .title {

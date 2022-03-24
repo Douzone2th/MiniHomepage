@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: flex-start;
   letter-spacing: 1.3px;
+  align-items: 
 }
 
 .title {
@@ -77,10 +78,7 @@
   --hover: #94e458;
 }
 
-button {
-  color: var(--color);
-  transition: 0.25s;
-}
+
 
 button:hover,
 button:focus {
@@ -101,9 +99,10 @@ button {
   background: none;
   border: 2px solid;
   line-height: 1;
-  margin: 20px;
+  margin: 30px;
   padding: 1em 2em;
-
+  color: var(--color);
+  transition: 0.25s;
 }
 
 div#timelinearea {

@@ -70,6 +70,11 @@ svg {
   background-color: rgb(243, 240, 240);
 }
 
+.wooh{
+  position: absolute;
+
+}
+
 
 .about__section .about__slot {
   width: 33%;
@@ -91,6 +96,10 @@ svg {
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.about__section .about__slot .jaebin-123{
+  z-index: 10;
 }
 
 .about__slot .bioText {

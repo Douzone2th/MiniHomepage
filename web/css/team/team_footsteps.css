@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: flex-start;
   letter-spacing: 1.3px;
+  align-items: center;
 }
 
 .title {
@@ -77,10 +78,7 @@
   --hover: #94e458;
 }
 
-button {
-  color: var(--color);
-  transition: 0.25s;
-}
+
 
 button:hover,
 button:focus {
@@ -93,7 +91,8 @@ body .container {
   align-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 800px;
+  height: auto;
   font-family: "BMDOHYEON";
 }
 
@@ -101,9 +100,10 @@ button {
   background: none;
   border: 2px solid;
   line-height: 1;
-  margin: 20px;
+  margin: 30px;
   padding: 1em 2em;
-
+  color: var(--color);
+  transition: 0.25s;
 }
 
 div#timelinearea {
@@ -118,7 +118,7 @@ div#timelinearea {
 
 
 
-.container  ul {
+.container ul {
   background: black;
   width: 1px;
   padding-left: 2px;

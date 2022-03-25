@@ -43,7 +43,7 @@ function floatingObject_main(selector, delay, size) {
     }
   );
 }
-floatingObject_sub(".floating4", 5, 45);
+floatingObject_sub(".floating4", 2, 45);
 floatingObject_sub(".floating5", 6, -25);
 floatingObject_main(".floating6", 0.5, 30);
 

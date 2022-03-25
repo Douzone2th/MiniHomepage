@@ -19,14 +19,6 @@
 	font-style: normal;
 }
 
-/* article {
-  position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	margin-top: -96px;
-} */
-
 article ul {
 	margin: 0;
 	padding: 0;
@@ -46,8 +38,6 @@ article li {
 article ul li label ul li {
 	font-size: 1em;
 }
-
-
 
 li span,
 li span:before,
@@ -189,4 +179,8 @@ li:hover label {
 	height: 100px;
 	margin: 10px;
 	background-color: #ffdfbf;
+}
+
+.ggg {
+	display: none;
 }

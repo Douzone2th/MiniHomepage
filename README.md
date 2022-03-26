@@ -12,11 +12,15 @@ git fetch upstream
 
 git add .
 
-git commit -m "merge:3/23, merge to upstream main before"
+git commit -m "merge,feat:3/23, merge to upstream main before, feat 메인페이지 진행중"
 
 git rebase upstream/main
 
 <여기서 충돌나면 충돌 고쳐주세요>
+충돌을 다 고쳤다면
+
+git add .
+git commit -m "merge: fix conflict and merge to upstream main"
 
 ... 작업 중...
 
@@ -27,6 +31,7 @@ git push origin main
 
 
 그리고 pull request
+pull request 시 title과 content에 커밋메시지 보다 더 구체적으로 적어주세요
 
 ```
 
@@ -48,15 +53,19 @@ git remote add origin 개인주소
 - pull : 원격 저장소의 정보를 가져오면서 자동으로 로컬 브랜치에 병합(Merge)까지 수행해주는 명령어 
 git pull upstream main
 
+==================================================
+받기전에  add , commit 필수!!!
 - 원격 개인저장소 및 원격 조직 저장소에 올리기
 - 올리기전에 pull이나 fetch로 변경점 확인
-첫번째 방법. 
+
+첫번째 방법. (충돌 날것이 없고 다 받고 싶은 경우!!!) 
 git pull upstream main
-받기전에 commit 필수!!!
 
 두번째 방법. ▶▶▶▶▶ upstream main을 받을때는 rebase나 merge를 하는게 좋다.
 git fetch upstream
 git rebase upstream/main
+
+--- 기본 올리는 명령어
 
 1. add : 변경된 파일 스테이징
 
@@ -126,6 +135,7 @@ refator:3/21, refactor web/js/main.js
     - 지도 API, 이미지
     - 맛집 장소 찾기, 음식 사진 
     - 메인 페이지 보조
+    - 팀 뉴스
 - 윤우형
   - 갤러리,사진첩
     - 팀원들 사진 
@@ -157,4 +167,4 @@ rgb(242,243,245)
 
 <hr>
 
-##### 최종 수정 : 220319 정재빈 
+##### 최종 수정 : 220325 정재빈 
